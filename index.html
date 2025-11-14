@@ -91,3 +91,68 @@
     </div>
 </body>
 </html>
+
+
+    <script>
+    const matches = [//will add data here]
+
+    const colors = {
+        YELLOW: ["#FDC333", "#FFEDAD"],
+        GREEN: ["#A2C84F", "#D7E3A1"],
+        ORANGE: ["#F3924C", "#fbcfa5"],
+        RED: ["#EC6062", "#F9CAC5"],
+        PURPLE: ["#8871B1", "#E5D7EB"],
+        BLUE: ["#66BCEB", "#BCE4FA"],
+        'ESP': ["#F3924C", "#FBCFA5"], 
+        'ENG': ["#66BCEB", "#BCE4FA"], 
+        'FRA': ["#66BCEB", "#BCE4FA"], 
+        'MAR': ["#F3924C", "#FBCFA5"], 
+        'JPN': ["#8871B1", "#E5D7EB"], 
+        'SWE': ["#FDC333", "#FFEDAD"], 
+        'AUS': ["#FDC333", "#FFEDAD"], 
+        'COL': ["#66BCEB", "#BCE4FA"], 
+    };
+
+    const schema = {
+        PHI: "PURPLE", NOR: "ORANGE", NZL: "BLUE", SUI: "RED",
+        AUS: "YELLOW", CAN: "RED", IRL: "ORANGE", NGA: "GREEN",
+        CRC: "RED", ESP: "ORANGE", JPN: "PURPLE", ZAM: "GREEN",
+        CHN: "RED", DEN: "YELLOW", HAI: "PURPLE", ENG: "BLUE",
+        USA: "BLUE", NED: "ORANGE", POR: "GREEN", VIE: "PURPLE",
+        BRA: "GREEN", FRA: "BLUE", JAM: "YELLOW", PAM: "PURPLE",
+        ARG: "BLUE", ITA: "PURPLE", SWE: "YELLOW", RSA: "GREEN",
+        GER: "YELLOW", COL: "BLUE", KOR: "RED", MAR: "ORANGE",
+    };
+
+    const DRAWING_WIDTH = 450; 
+    const DRAWING_HEIGHT = 600; 
+    const DRAWING_SCALE_FACTOR = 3; 
+    const SCALE = 1; 
+    
+    const MARGIN = { x: 30 * SCALE * DRAWING_SCALE_FACTOR, y: 30 * SCALE * DRAWING_SCALE_FACTOR };
+    const BACKGROUND_COLOR = "#1d1d1d"; 
+    const INVERSE_COLOR = "#ffffff"; 
+
+    const textureImage = new Image();
+    textureImage.crossOrigin = 'Anonymous'; 
+    textureImage.src = "https://plus.unsplash.com/premium_photo-1667811951673-3b3e8d6742c7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bm9pc2UlMjB0ZXh0dXJlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000";
+    let textureLoaded = false;
+    textureImage.onload = () => {
+        textureLoaded = true;
+        const selector = document.getElementById('matchSelector');
+        if (selector.value) {
+            updateUI(selector.value);
+        }
+    };
+    textureImage.onerror = () => {
+        console.error("Failed to load texture image. Proceeding without texture.");
+        textureLoaded = true;
+        const selector = document.getElementById('matchSelector');
+        if (selector.value) {
+            updateUI(selector.value);
+        }
+    };
+
+</script>
+</body>
+</html>
