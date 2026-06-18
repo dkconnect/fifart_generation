@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Generative World Cup Poster — Brutalist Edition (Improved)</title>
+<title>Fifart Generation Model</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
@@ -21,9 +21,13 @@ body{
   box-shadow:0 30px 70px rgba(0,0,0,.25);
 }
 #poster-wrap svg{width:100%;height:auto;display:block}
-button{
+.btn-group{
+  display:flex;
+  gap:12px;
   margin-top:24px;
-  padding:12px 35px;
+}
+button{
+  padding:12px 24px;
   background:#111;
   border:none;
   color:#fff;
@@ -32,18 +36,23 @@ button{
   letter-spacing:2px;
   cursor:pointer;
   text-transform:uppercase;
+  transition: background 0.2s ease;
 }
 button:hover{background:#333}
+#dl-png{background:#006600;}
+#dl-png:hover{background:#004d00;}
 </style>
 </head>
 <body>
 
 <div id="poster-wrap"></div>
-<button id="dl-svg">↓ Download SVG Artwork</button>
+<div class="btn-group">
+  <button id="dl-svg">↓ Download SVG Artwork</button>
+  <button id="dl-png">↓ Download PNG Artwork</button>
+</div>
 
 <script>
 // Match data
-
 const MATCH = {
   home: {
     name: "Portugal",
@@ -83,7 +92,7 @@ const MATCH = {
   matchNumber: "21"
 };
 
-// Match data
+// Match Data
 
 const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 
@@ -152,16 +161,16 @@ function buildBrutalistSVG(m){
   }
 
   const homeAttackHeight = clamp(
-  80 + home.shotsOnTarget*10 + home.passAccuracy*0.7,
-  120,260
-);
-const awayAttackHeight = clamp(
-  80 + away.shotsOnTarget*10 + away.passAccuracy*0.7,
-  120,260
-);
+    80 + home.shotsOnTarget*10 + home.passAccuracy*0.7,
+    120,260
+  );
+  const awayAttackHeight = clamp(
+    80 + away.shotsOnTarget*10 + away.passAccuracy*0.7,
+    120,260
+  );
 
-const homeAttackBase = 250 + home.possession*1.2;
-const awayAttackBase = 250 + away.possession*1.2;
+  const homeAttackBase = 250 + home.possession*1.2;
+  const awayAttackBase = 250 + away.possession*1.2;
   const possessionDelta=(home.possession-50)/50;
   const waveCenterY=H*(0.50-possessionDelta*0.12);
   const segW=(W-80)/(home.intensity.length-1);
@@ -199,8 +208,10 @@ const awayAttackBase = 250 + away.possession*1.2;
   const homeString = `${home.name.toUpperCase()} ${home.goals} • ${m.stage} • `.repeat(6);
   const awayString = `${away.name.toUpperCase()} ${away.goals} • ${m.venue} • `.repeat(6);
 
+  /* Note: Explicitly passed absolute width and height attributes into the opening tag 
+     to prevent rasterization canvas scaling errors across chromium engines */
   return `
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}">
     <rect width="${W}" height="${H}" fill="#EAE8E4"/>
     <rect x="40" y="40" width="${W-80}" height="${H-80}" fill="#F4F2EE"/>
 
@@ -249,13 +260,13 @@ const awayAttackBase = 250 + away.possession*1.2;
     </g>
 
     <g transform="rotate(-90 40 40)">
-      <text x="-280" y="-12" font-family="Helvetica" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
+      <text x="-280" y="-12" font-family="Helvetica,sans-serif" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
         ${m.stage} // ${m.date}
       </text>
     </g>
 
     <g transform="rotate(90 ${W-40} 40)">
-      <text x="60" y="-14" font-family="Helvetica" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
+      <text x="60" y="-14" font-family="Helvetica,sans-serif" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
         ${m.venue} // MATCH ${m.matchNumber}
       </text>
     </g>
@@ -285,8 +296,9 @@ const awayAttackBase = 250 + away.possession*1.2;
 const svgStr=buildBrutalistSVG(MATCH);
 document.getElementById('poster-wrap').innerHTML=svgStr;
 
+
 document.getElementById('dl-svg').addEventListener('click',()=>{
-  const blob=new Blob([svgStr],{type:'image/svg+xml'});
+  const blob=new Blob([svgStr],{type:'image/svg+xml;charset=utf-8'});
   const url=URL.createObjectURL(blob);
 
   const a=document.createElement('a');
@@ -295,6 +307,39 @@ document.getElementById('dl-svg').addEventListener('click',()=>{
   a.click();
 
   URL.revokeObjectURL(url);
+});
+
+document.getElementById('dl-png').addEventListener('click', () => {
+  const W = 520;
+  const H = 720;
+
+  const blob = new Blob([svgStr], { type: 'image/svg+xml;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  
+  const img = new Image();
+  img.crossOrigin = 'anonymous'; 
+  
+  img.onload = () => {
+
+    const canvas = document.createElement('canvas');
+    canvas.width = W * 2; 
+    canvas.height = H * 2;
+    
+    const ctx = canvas.getContext('2d');
+    ctx.scale(2, 2); 
+    ctx.drawImage(img, 0, 0, W, H);
+
+    const pngUrl = canvas.toDataURL('image/png');
+    
+    const a = document.createElement('a');
+    a.href = pngUrl;
+    a.download = `brutalist-${MATCH.home.shortName}-${MATCH.away.shortName}.png`;
+    a.click();
+    
+    URL.revokeObjectURL(url);
+  };
+
+  img.src = url;
 });
 </script>
 </body>
