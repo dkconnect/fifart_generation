@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Generative World Cup Poster — Brutalist Edition (Improved)</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:#ddd;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:40px 20px;
+  font-family:system-ui,-apple-system,sans-serif;
+  min-height:100vh;
+}
+#poster-wrap{
+  width:520px;
+  max-width:100%;
+  box-shadow:0 30px 70px rgba(0,0,0,.25);
+}
+#poster-wrap svg{width:100%;height:auto;display:block}
+button{
+  margin-top:24px;
+  padding:12px 35px;
+  background:#111;
+  border:none;
+  color:#fff;
+  font-family:monospace;
+  font-size:11px;
+  letter-spacing:2px;
+  cursor:pointer;
+  text-transform:uppercase;
+}
+button:hover{background:#333}
+</style>
+</head>
+<body>
+
+<div id="poster-wrap"></div>
+<button id="dl-svg">↓ Download SVG Artwork</button>
+
+<script>
+// Match data
+
+const MATCH = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 1,
+    scorers: [
+      { name: "João Neves", minute: "6'" }
+    ],
+    possession: 67,
+    shotsOnTarget: 3,
+    passAccuracy: 91,
+    distanceCovered: 108,
+    intensity: [0.9, 0.8, 0.6, 0.5, 0.4, 0.4]
+  },
+
+  away: {
+    name: "DR Congo",
+    shortName: "COD",
+    color: "#007FFF",
+    colorDark: "#F7D618",
+    goals: 1,
+    scorers: [
+      { name: "Yoane Wissa", minute: "45+1'" }
+    ],
+    possession: 33,
+    shotsOnTarget: 2,
+    passAccuracy: 75,
+    distanceCovered: 117,
+    intensity: [0.4, 0.5, 0.6, 0.8, 0.8, 0.9]
+  },
+
+  date: "17 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP K",
+  matchNumber: "21"
+};
+
+// Match data
+
+const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
+
+function createSeededRandom(seed){
+  return function(){
+    seed=(seed*1664525+1013904223)%4294967296;
+    return seed/4294967296;
+  };
+}
+
+function goalRadius(goals, shots){
+  return 45 + goals*22 + Math.sqrt(shots)*4;
+}
+
+function trend(arr){
+  return arr[arr.length-1]-arr[0];
+}
+
+function buildBrutalistSVG(m){
+  const W=520,H=720;
+  const home=m.home;
+  const away=m.away;
+
+  const seed =
+  (home.name + away.name + m.date)
+  .split('')
+  .reduce((a,c)=>a+c.charCodeAt(0),0);
+
+  const rand=createSeededRandom(seed);
+
+  function hexToRgb(hex){
+    const n=parseInt(hex.slice(1),16);
+    return {r:(n>>16)&255,g:(n>>8)&255,b:n&255};
+  }
+
+  function luminance(hex){
+    const {r,g,b}=hexToRgb(hex);
+    return 0.2126*r + 0.7152*g + 0.0722*b;
+  }
+
+  const homeOpacity = luminance(home.color) > 180 ? 0.65 : 0.85;
+  const awayOpacity = luminance(away.color) > 180 ? 0.60 : 0.75;
+
+  let dotGrid='';
+  for(let r=0;r<5;r++){
+    for(let c=0;c<8;c++){
+      dotGrid+=`<circle cx="${60+c*18}" cy="${110+r*18}" r="2.5" fill="#111" opacity="0.15"/>`;
+    }
+  }
+
+  let lineTexture='';
+  for(let y=40;y<H-40;y+=4){
+    lineTexture+=`<line x1="40" y1="${y}" x2="${W-40}" y2="${y}" stroke="#000" stroke-width="0.5" opacity="0.06"/>`;
+  }
+
+  let grain = ''; let dust = ''; let scratches = '';
+  for(let i=0;i<1500;i++){
+    grain += `<circle cx="${rand()*W}" cy="${rand()*H}" r="${rand()*0.7}" fill="#000" opacity="${0.01 + rand()*0.025}"/>`;
+  }
+  for(let i=0;i<100;i++){
+    dust += `<circle cx="${rand()*W}" cy="${rand()*H}" r="${1 + rand()*1.5}" fill="#000" opacity="${0.02 + rand()*0.04}"/>`;
+  }
+  for(let i=0;i<25;i++){
+    const x = rand()*W; const y = rand()*H; const len = 20 + rand()*50;
+    scratches += `<line x1="${x}" y1="${y}" x2="${x+len}" y2="${y + (rand()*6 - 3)}" stroke="#000" stroke-width="0.4" opacity="0.03"/>`;
+  }
+
+  const homeAttackHeight = clamp(
+  80 + home.shotsOnTarget*10 + home.passAccuracy*0.7,
+  120,260
+);
+const awayAttackHeight = clamp(
+  80 + away.shotsOnTarget*10 + away.passAccuracy*0.7,
+  120,260
+);
+
+const homeAttackBase = 250 + home.possession*1.2;
+const awayAttackBase = 250 + away.possession*1.2;
+  const possessionDelta=(home.possession-50)/50;
+  const waveCenterY=H*(0.50-possessionDelta*0.12);
+  const segW=(W-80)/(home.intensity.length-1);
+
+  function buildWave(intensity,centerY,amp,invert=false){
+    const points=intensity.map((v,i)=>({
+      x:40+i*segW,
+      y:centerY+(invert?1:-1)*amp*v
+    }));
+    let d=`M ${points[0].x} ${centerY} L ${points[0].x} ${points[0].y}`;
+    for(let i=0;i<points.length-1;i++){
+      const p0=points[Math.max(i-1,0)]; const p1=points[i]; const p2=points[i+1]; const p3=points[Math.min(i+2,points.length-1)];
+      const cp1x=p1.x+(p2.x-p0.x)/6; const cp1y=p1.y+(p2.y-p0.y)/6;
+      const cp2x=p2.x-(p3.x-p1.x)/6; const cp2y=p2.y-(p3.y-p1.y)/6;
+      d+=` C ${cp1x} ${cp1y} ${cp2x} ${cp2y} ${p2.x} ${p2.y}`;
+    }
+    d+=` L ${W-40} ${centerY} Z`;
+    return d;
+  }
+
+  const homeWavePoints=buildWave(home.intensity,waveCenterY,75,false);
+  const awayWavePoints=buildWave(away.intensity,waveCenterY,75,true);
+
+  const homeRadius=goalRadius(home.goals, home.shotsOnTarget);
+  const awayRadius=goalRadius(away.goals, away.shotsOnTarget);
+  const goalDiff=Math.abs(home.goals-away.goals);
+  const separation= 120 + goalDiff*25;
+
+  const homeCircle={ x:W/2+separation/4, y:H*0.38 };
+  const awayCircle={ x:W/2-separation/4, y:H*0.58 };
+
+  const momentum=trend(home.intensity)-trend(away.intensity);
+  const rotation=momentum*12;
+
+  const homeString = `${home.name.toUpperCase()} ${home.goals} • ${m.stage} • `.repeat(6);
+  const awayString = `${away.name.toUpperCase()} ${away.goals} • ${m.venue} • `.repeat(6);
+
+  return `
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}">
+    <rect width="${W}" height="${H}" fill="#EAE8E4"/>
+    <rect x="40" y="40" width="${W-80}" height="${H-80}" fill="#F4F2EE"/>
+
+    ${lineTexture}
+
+    <g transform="rotate(${rotation} ${W/2} ${H/2})">
+      <g clip-path="url(#clip)">
+        ${dotGrid}
+
+        <path d="M 40 40 L ${homeAttackBase} 40 L ${200+home.passAccuracy} ${homeAttackHeight} Z" fill="${home.color}" opacity="${homeOpacity}"/>
+        <path d="M ${W-40} ${H-40} L ${W-awayAttackBase} ${H-40} L ${W-100-away.passAccuracy} ${H-awayAttackHeight} Z" fill="${away.color}" opacity="${awayOpacity}"/>
+        <path d="${homeWavePoints}" fill="${home.colorDark}" opacity="0.25"/>
+        <path d="${awayWavePoints}" fill="${away.colorDark}" opacity="0.20"/>
+
+        <line x1="40" y1="${waveCenterY}" x2="${W-40}" y2="${waveCenterY}" stroke="#111" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+        <line x1="${awayCircle.x}" y1="${awayCircle.y}" x2="${homeCircle.x}" y2="${homeCircle.y}" stroke="#111" stroke-width="1.5" opacity="${0.08 + Math.abs(home.possession-away.possession)/100*0.22}"/>
+
+        <circle cx="${homeCircle.x}" cy="${homeCircle.y}" r="${homeRadius}" fill="${home.color}" style="mix-blend-mode:multiply"/>
+        <circle cx="${awayCircle.x}" cy="${awayCircle.y}" r="${awayRadius}" fill="${away.color}" style="mix-blend-mode:multiply"/>
+
+        <circle cx="${homeCircle.x}" cy="${homeCircle.y}" r="6" fill="none" stroke="#fff" stroke-width="1.5"/>
+        <circle cx="${awayCircle.x}" cy="${awayCircle.y}" r="6" fill="none" stroke="#fff" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <defs>
+      <clipPath id="clip">
+        <rect x="40" y="40" width="${W-80}" height="${H-80}"/>
+      </clipPath>
+      
+      <clipPath id="text-clip">
+        <rect x="40" y="0" width="${W-80}" height="${H}"/>
+      </clipPath>
+    </defs>
+
+    <g clip-path="url(#text-clip)">
+      <text x="40" y="32" font-family="Impact,sans-serif" font-size="28" fill="#111">
+        ${homeString}
+      </text>
+    </g>
+
+    <g clip-path="url(#text-clip)">
+      <text x="40" y="${H-14}" font-family="Impact,sans-serif" font-size="28" fill="#111">
+        ${awayString}
+      </text>
+    </g>
+
+    <g transform="rotate(-90 40 40)">
+      <text x="-280" y="-12" font-family="Helvetica" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
+        ${m.stage} // ${m.date}
+      </text>
+    </g>
+
+    <g transform="rotate(90 ${W-40} 40)">
+      <text x="60" y="-14" font-family="Helvetica" font-size="9" font-weight="900" letter-spacing="2" opacity="0.75">
+        ${m.venue} // MATCH ${m.matchNumber}
+      </text>
+    </g>
+
+    <g transform="translate(${W - 50}, 115)">
+      ${home.scorers.map((s,i)=>`
+      <text x="-40" y="${i*16}" font-family="monospace" font-size="10" font-weight="bold" fill="#111" text-anchor="end">${s.name.toUpperCase()}</text>
+      <text x="0" y="${i*16}" font-family="monospace" font-size="10" fill="${home.colorDark}" text-anchor="end">${s.minute}</text>
+      `).join('')}
+    </g>
+
+    <g transform="translate(50, 520)">
+      ${away.scorers.map((s,i)=>`
+      <text x="0" y="${i*14}" font-family="monospace" font-size="9" fill="${away.colorDark}" text-anchor="start">${s.minute}</text>
+      <text x="35" y="${i*14}" font-family="monospace" font-size="9" font-weight="bold" fill="#111" text-anchor="start">${s.name.toUpperCase()}</text>
+      `).join('')}
+    </g>
+
+    <g opacity="0.8" pointer-events="none">
+      ${dust}
+      ${grain}
+      ${scratches}
+    </g>
+  </svg>`;
+}
+
+const svgStr=buildBrutalistSVG(MATCH);
+document.getElementById('poster-wrap').innerHTML=svgStr;
+
+document.getElementById('dl-svg').addEventListener('click',()=>{
+  const blob=new Blob([svgStr],{type:'image/svg+xml'});
+  const url=URL.createObjectURL(blob);
+
+  const a=document.createElement('a');
+  a.href=url;
+  a.download=`brutalist-${MATCH.home.shortName}-${MATCH.away.shortName}.svg`;
+  a.click();
+
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
