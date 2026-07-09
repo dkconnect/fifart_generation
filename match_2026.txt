@@ -1,0 +1,3675 @@
+// MATCH 1: Mexico vs South Africa (Group A)
+const MATCH_1 = {
+  home: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Santiago Giménez", minute: "23'" },
+      { name: "Henry Martín", minute: "74'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 6,
+    passAccuracy: 84,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.6, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "South Africa",
+    shortName: "RSA",
+    color: "#007A4D",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 2,
+    passAccuracy: 75,
+    distanceCovered: 109,
+    intensity: [0.6, 0.5, 0.6, 0.6, 0.5, 0.4]
+  },
+  date: "11 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "GROUP A",
+  matchNumber: "1"
+};
+
+// MATCH 2: South Korea vs Czechia (Group A)
+const MATCH_2 = {
+  home: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Son Heung-min", minute: "34'" },
+      { name: "Hwang Hee-chan", minute: "81'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Czechia",
+    shortName: "CZE",
+    color: "#11457E",
+    colorDark: "#D7141A",
+    goals: 1,
+    scorers: [
+      { name: "Patrik Schick", minute: "59'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 113,
+    intensity: [0.6, 0.6, 0.7, 0.7, 0.5, 0.6]
+  },
+  date: "11 JUN 2026",
+  venue: "GUADALAJARA STADIUM",
+  stage: "GROUP A",
+  matchNumber: "2"
+};
+
+// MATCH 3: Canada vs Bosnia and Herzegovina (Group B)
+const MATCH_3 = {
+  home: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Jonathan David", minute: "48'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 5,
+    passAccuracy: 80,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.8, 0.6]
+  },
+  away: {
+    name: "Bosnia and Herzegovina",
+    shortName: "BIH",
+    color: "#002F6C",
+    colorDark: "#FFCD00",
+    goals: 1,
+    scorers: [
+      { name: "Edin Džeko", minute: "12'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 108,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "12 JUN 2026",
+  venue: "TORONTO STADIUM",
+  stage: "GROUP B",
+  matchNumber: "3"
+};
+
+// MATCH 4: United States vs Paraguay (Group D)
+const MATCH_4 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#002868",
+    colorDark: "#BF0A30",
+    goals: 4,
+    scorers: [
+      { name: "Christian Pulisic", minute: "15'" },
+      { name: "Folarin Balogun", minute: "38'" },
+      { name: "Timothy Weah", minute: "62'" },
+      { name: "Brenden Aaronson", minute: "89'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 8,
+    passAccuracy: 86,
+    distanceCovered: 114,
+    intensity: [0.8, 0.8, 0.7, 0.8, 0.7, 0.9]
+  },
+  away: {
+    name: "Paraguay",
+    shortName: "PAR",
+    color: "#D52B1E",
+    colorDark: "#0038A8",
+    goals: 1,
+    scorers: [
+      { name: "Miguel Almirón", minute: "55'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 3,
+    passAccuracy: 74,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "12 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "GROUP D",
+  matchNumber: "4"
+};
+
+// MATCH 5: Qatar vs Switzerland (Group B)
+const MATCH_5 = {
+  home: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Almoez Ali", minute: "44'" }
+    ],
+    possession: 40,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 110,
+    intensity: [0.6, 0.6, 0.7, 0.5, 0.4, 0.5]
+  },
+  away: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Breel Embolo", minute: "68'" }
+    ],
+    possession: 60,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.8]
+  },
+  date: "13 JUN 2026",
+  venue: "SAN FRANCISCO BAY STADIUM",
+  stage: "GROUP B",
+  matchNumber: "5"
+};
+
+// MATCH 6: Brazil vs Morocco (Group C)
+const MATCH_6 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 1,
+    scorers: [
+      { name: "Vinícius Júnior", minute: "29'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 111,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 1,
+    scorers: [
+      { name: "Hakim Ziyech", minute: "71'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.7, 0.9]
+  },
+  date: "13 JUN 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "GROUP C",
+  matchNumber: "6"
+};
+
+// MATCH 7: Scotland vs Haiti (Group C)
+const MATCH_7 = {
+  home: {
+    name: "Scotland",
+    shortName: "SCO",
+    color: "#002B66",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "John McGinn", minute: "61'" }
+    ],
+    possession: 57,
+    shotsOnTarget: 6,
+    passAccuracy: 83,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Haiti",
+    shortName: "HAI",
+    color: "#00209F",
+    colorDark: "#D21034",
+    goals: 0,
+    scorers: [],
+    possession: 43,
+    shotsOnTarget: 1,
+    passAccuracy: 72,
+    distanceCovered: 107,
+    intensity: [0.7, 0.6, 0.5, 0.5, 0.4, 0.5]
+  },
+  date: "13 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP C",
+  matchNumber: "7"
+};
+
+// MATCH 8: Australia vs Türkiye (Group D)
+const MATCH_8 = {
+  home: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 2,
+    scorers: [
+      { name: "Mitchell Duke", minute: "19'" },
+      { name: "Jackson Irvine", minute: "52'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 4,
+    passAccuracy: 79,
+    distanceCovered: 116,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.6, 0.6]
+  },
+  away: {
+    name: "Türkiye",
+    shortName: "TUR",
+    color: "#E30A17",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 54,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.7]
+  },
+  date: "13 JUN 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "GROUP D",
+  matchNumber: "8"
+};
+
+// MATCH 9: Germany vs Curaçao (Group E)
+const MATCH_9 = {
+  home: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 7,
+    scorers: [
+      { name: "Jamal Musiala", minute: "8'" },
+      { name: "Kai Havertz", minute: "22'" },
+      { name: "Niclas Füllkrug", minute: "35'" },
+      { name: "Jamal Musiala", minute: "44'" },
+      { name: "Florian Wirtz", minute: "57'" },
+      { name: "Kai Havertz", minute: "69'" },
+      { name: "Leroy Sané", minute: "83'" }
+    ],
+    possession: 68,
+    shotsOnTarget: 14,
+    passAccuracy: 91,
+    distanceCovered: 110,
+    intensity: [0.8, 0.9, 0.7, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Curaçao",
+    shortName: "CUW",
+    color: "#002B7F",
+    colorDark: "#F9E814",
+    goals: 1,
+    scorers: [
+      { name: "Juninho Bacuna", minute: "76'" }
+    ],
+    possession: 32,
+    shotsOnTarget: 2,
+    passAccuracy: 69,
+    distanceCovered: 106,
+    intensity: [0.6, 0.5, 0.6, 0.5, 0.4, 0.4]
+  },
+  date: "14 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP E",
+  matchNumber: "9"
+};
+
+// MATCH 10: Netherlands vs Japan (Group F)
+const MATCH_10 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Cody Gakpo", minute: "41'" },
+      { name: "Memphis Depay", minute: "88'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.7, 0.6, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#000056",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Kaoru Mitoma", minute: "17'" },
+      { name: "Ritsu Doan", minute: "64'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 6,
+    passAccuracy: 83,
+    distanceCovered: 117,
+    intensity: [0.8, 0.7, 0.8, 0.7, 0.9, 0.9]
+  },
+  date: "14 JUN 2026",
+  venue: "DALLAS STADIUM",
+  stage: "GROUP F",
+  matchNumber: "10"
+};
+
+// MATCH 11: Côte d'Ivoire vs Ecuador (Group E)
+const MATCH_11 = {
+  home: {
+    name: "Côte d'Ivoire",
+    shortName: "CIV",
+    color: "#F77F00",
+    colorDark: "#009E60",
+    goals: 1,
+    scorers: [
+      { name: "Sébastien Haller", minute: "62'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.7, 0.6, 0.6, 0.7, 0.8, 0.6]
+  },
+  away: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFD100",
+    colorDark: "#00205B",
+    goals: 0,
+    scorers: [],
+    possession: 53,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 109,
+    intensity: [0.6, 0.7, 0.7, 0.5, 0.6, 0.5]
+  },
+  date: "14 JUN 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "GROUP E",
+  matchNumber: "11"
+};
+
+// MATCH 12: Sweden vs Tunisia (Group F)
+const MATCH_12 = {
+  home: {
+    name: "Sweden",
+    shortName: "SWE",
+    color: "#FFF01C",
+    colorDark: "#006AA7",
+    goals: 5,
+    scorers: [
+      { name: "Alexander Isak", minute: "12'" },
+      { name: "Viktor Gyökeres", minute: "34'" },
+      { name: "Dejan Kulusevski", minute: "51'" },
+      { name: "Alexander Isak", minute: "68'" },
+      { name: "Viktor Gyökeres", minute: "89'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 9,
+    passAccuracy: 87,
+    distanceCovered: 113,
+    intensity: [0.8, 0.7, 0.8, 0.7, 0.6, 0.7]
+  },
+  away: {
+    name: "Tunisia",
+    shortName: "TUN",
+    color: "#E70013",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Ellyes Skhiri", minute: "75'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 2,
+    passAccuracy: 74,
+    distanceCovered: 115,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.7, 0.5]
+  },
+  date: "14 JUN 2026",
+  venue: "MONTERREY STADIUM",
+  stage: "GROUP F",
+  matchNumber: "12"
+};
+
+// MATCH 13: Spain vs Cabo Verde (Group H)
+const MATCH_13 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 0,
+    scorers: [],
+    possession: 72,
+    shotsOnTarget: 5,
+    passAccuracy: 92,
+    distanceCovered: 108,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Cabo Verde",
+    shortName: "CPV",
+    color: "#003893",
+    colorDark: "#CF2027",
+    goals: 0,
+    scorers: [],
+    possession: 28,
+    shotsOnTarget: 1,
+    passAccuracy: 68,
+    distanceCovered: 114,
+    intensity: [0.8, 0.7, 0.8, 0.7, 0.6, 0.5]
+  },
+  date: "15 JUN 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "GROUP H",
+  matchNumber: "13"
+};
+
+// MATCH 14: Belgium vs Egypt (Group G)
+const MATCH_14 = {
+  home: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Kevin De Bruyne", minute: "41'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Egypt",
+    shortName: "EGY",
+    color: "#CE1126",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Mohamed Salah", minute: "55'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 4,
+    passAccuracy: 78,
+    distanceCovered: 112,
+    intensity: [0.6, 0.8, 0.7, 0.6, 0.5, 0.6]
+  },
+  date: "15 JUN 2026",
+  venue: "SEATTLE STADIUM",
+  stage: "GROUP G",
+  matchNumber: "14"
+};
+
+// MATCH 15: Saudi Arabia vs Uruguay (Group H)
+const MATCH_15 = {
+  home: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Salem Al-Dawsari", minute: "67'" }
+    ],
+    possession: 41,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 116,
+    intensity: [0.7, 0.6, 0.7, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#55B5E5",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Darwin Núñez", minute: "22'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 111,
+    intensity: [0.8, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  date: "15 JUN 2026",
+  venue: "MIAMI STADIUM",
+  stage: "GROUP H",
+  matchNumber: "15"
+};
+
+// MATCH 16: IR Iran vs New Zealand (Group G)
+const MATCH_16 = {
+  home: {
+    name: "IR Iran",
+    shortName: "IRN",
+    color: "#239F40",
+    colorDark: "#DA291C",
+    goals: 2,
+    scorers: [
+      { name: "Mehdi Taremi", minute: "39'" },
+      { name: "Sardar Azmoun", minute: "81'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 5,
+    passAccuracy: 80,
+    distanceCovered: 113,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "New Zealand",
+    shortName: "NZL",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Chris Wood", minute: "14'" },
+      { name: "Elijah Just", minute: "63'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 4,
+    passAccuracy: 75,
+    distanceCovered: 114,
+    intensity: [0.8, 0.6, 0.7, 0.7, 0.6, 0.7]
+  },
+  date: "15 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "GROUP G",
+  matchNumber: "16"
+};
+
+// MATCH 17: France vs Senegal (Group I)
+const MATCH_17 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#ED2939",
+    goals: 3,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "19'" },
+      { name: "Antoine Griezmann", minute: "45+2'" },
+      { name: "Ousmane Dembélé", minute: "78'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 7,
+    passAccuracy: 88,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.7, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 1,
+    scorers: [
+      { name: "Sadio Mané", minute: "61'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.6, 0.6, 0.7, 0.8, 0.7, 0.6]
+  },
+  date: "16 JUN 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "GROUP I",
+  matchNumber: "17"
+};
+
+// MATCH 18: Iraq vs Norway (Group I)
+const MATCH_18 = {
+  home: {
+    name: "Iraq",
+    shortName: "IRQ",
+    color: "#007A3D",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Aymen Hussein", minute: "33'" }
+    ],
+    possession: 36,
+    shotsOnTarget: 2,
+    passAccuracy: 71,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.5, 0.4]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 4,
+    scorers: [
+      { name: "Erling Haaland", minute: "11'" },
+      { name: "Martin Ødegaard", minute: "42'" },
+      { name: "Erling Haaland", minute: "58'" },
+      { name: "Alexander Sørloth", minute: "84'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 8,
+    passAccuracy: 86,
+    distanceCovered: 113,
+    intensity: [0.8, 0.8, 0.7, 0.8, 0.7, 0.8]
+  },
+  date: "16 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP I",
+  matchNumber: "18"
+};
+
+// MATCH 19: Argentina vs Algeria (Group J)
+const MATCH_19 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#43A1D5",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Lionel Messi", minute: "24'" },
+      { name: "Julián Álvarez", minute: "50'" },
+      { name: "Lautaro Martínez", minute: "72'" }
+    ],
+    possession: 63,
+    shotsOnTarget: 6,
+    passAccuracy: 89,
+    distanceCovered: 109,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Algeria",
+    shortName: "ALG",
+    color: "#006233",
+    colorDark: "#D21034",
+    goals: 0,
+    scorers: [],
+    possession: 37,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 114,
+    intensity: [0.8, 0.6, 0.7, 0.7, 0.6, 0.5]
+  },
+  date: "16 JUN 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "GROUP J",
+  matchNumber: "19"
+};
+
+// MATCH 20: Austria vs Jordan (Group J)
+const MATCH_20 = {
+  home: {
+    name: "Austria",
+    shortName: "AUT",
+    color: "#ED2939",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Marcel Sabitzer", minute: "18'" },
+      { name: "Christoph Baumgartner", minute: "47'" },
+      { name: "Michael Gregoritsch", minute: "88'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 82,
+    distanceCovered: 115,
+    intensity: [0.7, 0.8, 0.7, 0.7, 0.8, 0.8]
+  },
+  away: {
+    name: "Jordan",
+    shortName: "JOR",
+    color: "#000000",
+    colorDark: "#CE1126",
+    goals: 1,
+    scorers: [
+      { name: "Musa Al-Taamari", minute: "35'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 112,
+    intensity: [0.6, 0.7, 0.6, 0.5, 0.6, 0.5]
+  },
+  date: "16 JUN 2026",
+  venue: "SAN FRANCISCO BAY AREA STADIUM",
+  stage: "GROUP J",
+  matchNumber: "20"
+};
+// MATCH 21: Portugal vs Democratic Republic of the Congo (Group K)
+const MATCH_21 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#D21034",
+    colorDark: "#00662F",
+    goals: 1,
+    scorers: [
+      { name: "Cristiano Ronaldo", minute: "68'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 5,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.6, 0.7]
+  },
+  away: {
+    name: "DR Congo",
+    shortName: "COD",
+    color: "#007FFF",
+    colorDark: "#F7D117",
+    goals: 1,
+    scorers: [
+      { name: "Yoane Wissa", minute: "43'" }
+    ],
+    possession: 38,
+    shotsOnTarget: 3,
+    passAccuracy: 75,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.6, 0.7, 0.7, 0.5]
+  },
+  date: "17 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP K",
+  matchNumber: "21"
+};
+
+// MATCH 22: England vs Croatia (Group L)
+const MATCH_22 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#CE1126",
+    goals: 4,
+    scorers: [
+      { name: "Harry Kane", minute: "14'" },
+      { name: "Bukayo Saka", minute: "33'" },
+      { name: "Jude Bellingham", minute: "58'" },
+      { name: "Phil Foden", minute: "81'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 9,
+    passAccuracy: 86,
+    distanceCovered: 114,
+    intensity: [0.8, 0.8, 0.7, 0.8, 0.7, 0.9]
+  },
+  away: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Andrej Kramarić", minute: "41'" },
+      { name: "Luka Modrić", minute: "73'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.6, 0.8]
+  },
+  date: "17 JUN 2026",
+  venue: "DALLAS STADIUM",
+  stage: "GROUP L",
+  matchNumber: "22"
+};
+
+// MATCH 23: Uzbekistan vs Colombia (Group K)
+const MATCH_23 = {
+  home: {
+    name: "Uzbekistan",
+    shortName: "UZB",
+    color: "#0099B5",
+    colorDark: "#1C355E",
+    goals: 1,
+    scorers: [
+      { name: "Eldor Shomurodov", minute: "70'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 111,
+    intensity: [0.6, 0.6, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Colombia",
+    shortName: "COL",
+    color: "#FCD116",
+    colorDark: "#003893",
+    goals: 3,
+    scorers: [
+      { name: "Luis Díaz", minute: "22'" },
+      { name: "Jhon Durán", minute: "49'" },
+      { name: "James Rodríguez", minute: "84'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 7,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.8, 0.7]
+  },
+  date: "17 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "GROUP K",
+  matchNumber: "23"
+};
+
+// MATCH 24: Ghana vs Panama (Group L)
+const MATCH_24 = {
+  home: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFE300",
+    colorDark: "#E30613",
+    goals: 1,
+    scorers: [
+      { name: "Mohammed Kudus", minute: "53'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 4,
+    passAccuracy: 80,
+    distanceCovered: 115,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.6]
+  },
+  away: {
+    name: "Panama",
+    shortName: "PAN",
+    color: "#DA121A",
+    colorDark: "#072357",
+    goals: 0,
+    scorers: [],
+    possession: 51,
+    shotsOnTarget: 2,
+    passAccuracy: 81,
+    distanceCovered: 112,
+    intensity: [0.6, 0.6, 0.7, 0.5, 0.6, 0.5]
+  },
+  date: "17 JUN 2026",
+  venue: "TORONTO STADIUM",
+  stage: "GROUP L",
+  matchNumber: "24"
+};
+
+// MATCH 25: Mexico vs South Korea (Group A)
+const MATCH_25 = {
+  home: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 1,
+    scorers: [
+      { name: "Santiago Giménez", minute: "38'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 4,
+    passAccuracy: 82,
+    distanceCovered: 112,
+    intensity: [0.8, 0.7, 0.8, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 47,
+    shotsOnTarget: 2,
+    passAccuracy: 79,
+    distanceCovered: 116,
+    intensity: [0.7, 0.8, 0.7, 0.7, 0.8, 0.8]
+  },
+  date: "18 JUN 2026",
+  venue: "GUADALAJARA STADIUM",
+  stage: "GROUP A",
+  matchNumber: "25"
+};
+
+// MATCH 26: Switzerland vs Bosnia and Herzegovina (Group B)
+const MATCH_26 = {
+  home: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 4,
+    scorers: [
+      { name: "Breel Embolo", minute: "19'" },
+      { name: "Xerdan Shaqiri", minute: "42'" },
+      { name: "Granit Xhaka", minute: "61'" },
+      { name: "Zeki Amdouni", minute: "87'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 8,
+    passAccuracy: 87,
+    distanceCovered: 110,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.7]
+  },
+  away: {
+    name: "Bosnia and Herzegovina",
+    shortName: "BIH",
+    color: "#002F6C",
+    colorDark: "#FFCD00",
+    goals: 1,
+    scorers: [
+      { name: "Ermedin Demirović", minute: "55'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 108,
+    intensity: [0.6, 0.6, 0.5, 0.6, 0.5, 0.4]
+  },
+  date: "18 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "GROUP B",
+  matchNumber: "26"
+};
+
+// MATCH 27: Canada vs Qatar (Group B)
+const MATCH_27 = {
+  home: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 6,
+    scorers: [
+      { name: "Jonathan David", minute: "7'" },
+      { name: "Alphonso Davies", minute: "23'" },
+      { name: "Cyle Larin", minute: "41'" },
+      { name: "Jonathan David", minute: "55'" },
+      { name: "Tajon Buchanan", minute: "71'" },
+      { name: "Ismaël Koné", minute: "88'" }
+    ],
+    possession: 66,
+    shotsOnTarget: 11,
+    passAccuracy: 89,
+    distanceCovered: 113,
+    intensity: [0.8, 0.9, 0.7, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 34,
+    shotsOnTarget: 1,
+    passAccuracy: 71,
+    distanceCovered: 106,
+    intensity: [0.5, 0.5, 0.6, 0.4, 0.5, 0.4]
+  },
+  date: "18 JUN 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "GROUP B",
+  matchNumber: "27"
+};
+
+// MATCH 28: Czechia vs South Africa (Group A)
+const MATCH_28 = {
+  home: {
+    name: "Czechia",
+    shortName: "CZE",
+    color: "#11457E",
+    colorDark: "#D7141A",
+    goals: 1,
+    scorers: [
+      { name: "Tomáš Souček", minute: "48'" }
+    ],
+    possession: 50,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.6, 0.6]
+  },
+  away: {
+    name: "South Africa",
+    shortName: "RSA",
+    color: "#007A4D",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Percy Tau", minute: "29'" }
+    ],
+    possession: 50,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.7]
+  },
+  date: "18 JUN 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "GROUP A",
+  matchNumber: "28"
+};
+
+// MATCH 29: Brazil vs Haiti (Group C)
+const MATCH_29 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 3,
+    scorers: [
+      { name: "Rodrygo", minute: "15'" },
+      { name: "Vinícius Júnior", minute: "42'" },
+      { name: "Endrick", minute: "79'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 8,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Haiti",
+    shortName: "HAI",
+    color: "#00209F",
+    colorDark: "#D21034",
+    goals: 0,
+    scorers: [],
+    possession: 36,
+    shotsOnTarget: 1,
+    passAccuracy: 72,
+    distanceCovered: 107,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "19 JUN 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "GROUP C",
+  matchNumber: "29"
+};
+
+// MATCH 30: Scotland vs Morocco (Group C)
+const MATCH_30 = {
+  home: {
+    name: "Scotland",
+    shortName: "SCO",
+    color: "#002B66",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 45,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 115,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 1,
+    scorers: [
+      { name: "Youssef En-Nesyri", minute: "64'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 116,
+    intensity: [0.7, 0.8, 0.7, 0.7, 0.8, 0.8]
+  },
+  date: "19 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP C",
+  matchNumber: "30"
+};
+// MATCH 31: Türkiye vs Paraguay (Group D)
+const MATCH_31 = {
+  home: {
+    name: "Türkiye",
+    shortName: "TUR",
+    color: "#E30A17",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Hakan Çalhanoğlu", minute: "55'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 112,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Paraguay",
+    shortName: "PAR",
+    color: "#D52B1E",
+    colorDark: "#0038A8",
+    goals: 1,
+    scorers: [
+      { name: "Antonio Sanabria", minute: "21'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 3,
+    passAccuracy: 77,
+    distanceCovered: 114,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.6]
+  },
+  date: "19 JUN 2026",
+  venue: "SAN FRANCISCO BAY AREA STADIUM",
+  stage: "GROUP D",
+  matchNumber: "31"
+};
+
+// MATCH 32: United States vs Australia (Group D)
+const MATCH_32 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#002868",
+    colorDark: "#BF0A30",
+    goals: 2,
+    scorers: [
+      { name: "Timothy Weah", minute: "41'" },
+      { name: "Folarin Balogun", minute: "73'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 6,
+    passAccuracy: 84,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.7, 0.6]
+  },
+  date: "19 JUN 2026",
+  venue: "SEATTLE STADIUM",
+  stage: "GROUP D",
+  matchNumber: "32"
+};
+
+// MATCH 33: Germany vs Côte d'Ivoire (Group E)
+const MATCH_33 = {
+  home: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Niclas Füllkrug", minute: "14'" },
+      { name: "Florian Wirtz", minute: "67'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 5,
+    passAccuracy: 88,
+    distanceCovered: 111,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.7, 0.8]
+  },
+  away: {
+    name: "Côte d'Ivoire",
+    shortName: "CIV",
+    color: "#F77F00",
+    colorDark: "#009E60",
+    goals: 1,
+    scorers: [
+      { name: "Sébastien Haller", minute: "82'" }
+    ],
+    possession: 41,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 114,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.8, 0.6]
+  },
+  date: "20 JUN 2026",
+  venue: "TORONTO STADIUM",
+  stage: "GROUP E",
+  matchNumber: "33"
+};
+
+// MATCH 34: Ecuador vs Curaçao (Group E)
+const MATCH_34 = {
+  home: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFD100",
+    colorDark: "#00205B",
+    goals: 3,
+    scorers: [
+      { name: "Enner Valencia", minute: "29'" },
+      { name: "Kendry Páez", minute: "47'" },
+      { name: "Enner Valencia", minute: "76'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 8,
+    passAccuracy: 86,
+    distanceCovered: 109,
+    intensity: [0.7, 0.8, 0.7, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Curaçao",
+    shortName: "CUW",
+    color: "#002B7F",
+    colorDark: "#F9E814",
+    goals: 0,
+    scorers: [],
+    possession: 39,
+    shotsOnTarget: 1,
+    passAccuracy: 73,
+    distanceCovered: 107,
+    intensity: [0.6, 0.5, 0.6, 0.5, 0.4, 0.4]
+  },
+  date: "20 JUN 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "GROUP E",
+  matchNumber: "34"
+};
+
+// MATCH 35: Netherlands vs Sweden (Group F)
+const MATCH_35 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 5,
+    scorers: [
+      { name: "Cody Gakpo", minute: "9'" },
+      { name: "Memphis Depay", minute: "24'" },
+      { name: "Xavi Simons", minute: "51'" },
+      { name: "Cody Gakpo", minute: "68'" },
+      { name: "Donyell Malen", minute: "83'" }
+    ],
+    possession: 57,
+    shotsOnTarget: 10,
+    passAccuracy: 89,
+    distanceCovered: 112,
+    intensity: [0.8, 0.8, 0.7, 0.8, 0.7, 0.9]
+  },
+  away: {
+    name: "Sweden",
+    shortName: "SWE",
+    color: "#FFF01C",
+    colorDark: "#006AA7",
+    goals: 1,
+    scorers: [
+      { name: "Alexander Isak", minute: "39'" }
+    ],
+    possession: 43,
+    shotsOnTarget: 3,
+    passAccuracy: 80,
+    distanceCovered: 115,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.5, 0.6]
+  },
+  date: "20 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP F",
+  matchNumber: "35"
+};
+
+// MATCH 36: Tunisia vs Japan (Group F)
+const MATCH_36 = {
+  home: {
+    name: "Tunisia",
+    shortName: "TUN",
+    color: "#E70013",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 36,
+    shotsOnTarget: 1,
+    passAccuracy: 72,
+    distanceCovered: 113,
+    intensity: [0.7, 0.6, 0.5, 0.5, 0.6, 0.4]
+  },
+  away: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#000056",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Ayase Ueda", minute: "19'" },
+      { name: "Takefusa Kubo", minute: "62'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 7,
+    passAccuracy: 87,
+    distanceCovered: 116,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.8, 0.8]
+  },
+  date: "20 JUN 2026",
+  venue: "MONTERREY STADIUM",
+  stage: "GROUP F",
+  matchNumber: "36"
+};
+
+// MATCH 37: Uruguay vs Cabo Verde (Group H)
+const MATCH_37 = {
+  home: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#55B5E5",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Darwin Núñez", minute: "33'" },
+      { name: "Federico Valverde", minute: "70'" }
+    ],
+    possession: 60,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.6, 0.7]
+  },
+  away: {
+    name: "Cabo Verde",
+    shortName: "CPV",
+    color: "#003893",
+    colorDark: "#CF2027",
+    goals: 1,
+    scorers: [
+      { name: "Ryan Mendes", minute: "84'" }
+    ],
+    possession: 40,
+    shotsOnTarget: 3,
+    passAccuracy: 75,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.6, 0.5, 0.6, 0.5]
+  },
+  date: "21 JUN 2026",
+  venue: "MIAMI STADIUM",
+  stage: "GROUP H",
+  matchNumber: "37"
+};
+
+// MATCH 38: Spain vs Saudi Arabia (Group H)
+const MATCH_38 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 4,
+    scorers: [
+      { name: "Álvaro Morata", minute: "12'" },
+      { name: "Nico Williams", minute: "31'" },
+      { name: "Dani Olmo", minute: "55'" },
+      { name: "Lamine Yamal", minute: "79'" }
+    ],
+    possession: 68,
+    shotsOnTarget: 9,
+    passAccuracy: 91,
+    distanceCovered: 109,
+    intensity: [0.7, 0.8, 0.8, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 32,
+    shotsOnTarget: 1,
+    passAccuracy: 71,
+    distanceCovered: 114,
+    intensity: [0.8, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "21 JUN 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "GROUP H",
+  matchNumber: "38"
+};
+
+// MATCH 39: Belgium vs IR Iran (Group G)
+const MATCH_39 = {
+  home: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Romelu Lukaku", minute: "26'" },
+      { name: "Leandro Trossard", minute: "64'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.7, 0.6]
+  },
+  away: {
+    name: "IR Iran",
+    shortName: "IRN",
+    color: "#239F40",
+    colorDark: "#DA291C",
+    goals: 1,
+    scorers: [
+      { name: "Mehdi Taremi", minute: "44'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  date: "21 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "GROUP G",
+  matchNumber: "39"
+};
+
+// MATCH 40: New Zealand vs Egypt (Group G)
+const MATCH_40 = {
+  home: {
+    name: "New Zealand",
+    shortName: "NZL",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 42,
+    shotsOnTarget: 2,
+    passAccuracy: 76,
+    distanceCovered: 112,
+    intensity: [0.6, 0.6, 0.7, 0.5, 0.6, 0.5]
+  },
+  away: {
+    name: "Egypt",
+    shortName: "EGY",
+    color: "#CE1126",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Mohamed Salah", minute: "38'" },
+      { name: "Mostafa Mohamed", minute: "81'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.8]
+  },
+  date: "21 JUN 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "GROUP G",
+  matchNumber: "40"
+};
+// MATCH 41: Uruguay vs Saudi Arabia (Group H)
+const MATCH_41 = {
+  home: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#55B5E5",
+    colorDark: "#000000",
+    goals: 3,
+    scorers: [
+      { name: "Darwin Núñez", minute: "14'" },
+      { name: "Federico Valverde", minute: "42'" },
+      { name: "Facundo Pellistri", minute: "71'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 7,
+    passAccuracy: 86,
+    distanceCovered: 111,
+    intensity: [0.7, 0.8, 0.7, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 42,
+    shotsOnTarget: 2,
+    passAccuracy: 75,
+    distanceCovered: 113,
+    intensity: [0.6, 0.7, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "22 JUN 2026",
+  venue: "DALLAS STADIUM",
+  stage: "GROUP H",
+  matchNumber: "41"
+};
+
+// MATCH 42: Cabo Verde vs Spain (Group H)
+const MATCH_42 = {
+  home: {
+    name: "Cabo Verde",
+    shortName: "CPV",
+    color: "#003893",
+    colorDark: "#CF2027",
+    goals: 1,
+    scorers: [
+      { name: "Bebé", minute: "80'" }
+    ],
+    possession: 31,
+    shotsOnTarget: 2,
+    passAccuracy: 69,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.7, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 2,
+    scorers: [
+      { name: "Lamine Yamal", minute: "23'" },
+      { name: "Nico Williams", minute: "54'" }
+    ],
+    possession: 69,
+    shotsOnTarget: 6,
+    passAccuracy: 91,
+    distanceCovered: 109,
+    intensity: [0.6, 0.7, 0.8, 0.7, 0.7, 0.8]
+  },
+  date: "22 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP H",
+  matchNumber: "42"
+};
+
+// MATCH 43: France vs Iraq (Group I)
+const MATCH_43 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#ED2939",
+    goals: 2,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "37'" },
+      { name: "Olivier Giroud", minute: "84'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 7,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Iraq",
+    shortName: "IRQ",
+    color: "#007A3D",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 38,
+    shotsOnTarget: 1,
+    passAccuracy: 73,
+    distanceCovered: 114,
+    intensity: [0.8, 0.6, 0.6, 0.5, 0.5, 0.4]
+  },
+  date: "22 JUN 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "GROUP I",
+  matchNumber: "43"
+};
+
+// MATCH 44: Senegal vs Norway (Group I)
+const MATCH_44 = {
+  home: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 1,
+    scorers: [
+      { name: "Nicolas Jackson", minute: "49'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 2,
+    scorers: [
+      { name: "Erling Haaland", minute: "29'" },
+      { name: "Martin Ødegaard", minute: "76'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 116,
+    intensity: [0.7, 0.6, 0.8, 0.7, 0.9, 0.9]
+  },
+  date: "22 JUN 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "GROUP I",
+  matchNumber: "44"
+};
+
+// MATCH 45: Argentina vs Austria (Group J)
+const MATCH_45 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#43A1D5",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Lautaro Martínez", minute: "31'" },
+      { name: "Alexis Mac Allister", minute: "64'" }
+    ],
+    possession: 57,
+    shotsOnTarget: 5,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.7, 0.7]
+  },
+  away: {
+    name: "Austria",
+    shortName: "AUT",
+    color: "#ED2939",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Michael Gregoritsch", minute: "78'" }
+    ],
+    possession: 43,
+    shotsOnTarget: 3,
+    passAccuracy: 80,
+    distanceCovered: 115,
+    intensity: [0.8, 0.8, 0.7, 0.7, 0.6, 0.7]
+  },
+  date: "23 JUN 2026",
+  venue: "TORONTO STADIUM",
+  stage: "GROUP J",
+  matchNumber: "45"
+};
+
+// MATCH 46: Algeria vs Jordan (Group J)
+const MATCH_46 = {
+  home: {
+    name: "Algeria",
+    shortName: "ALG",
+    color: "#006233",
+    colorDark: "#D21034",
+    goals: 2,
+    scorers: [
+      { name: "Riyad Mahrez", minute: "40'" },
+      { name: "Amine Gouiri", minute: "55'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 4,
+    passAccuracy: 82,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Jordan",
+    shortName: "JOR",
+    color: "#000000",
+    colorDark: "#CE1126",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "23 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP J",
+  matchNumber: "46"
+};
+
+// MATCH 47: Portugal vs Uzbekistan (Group K)
+const MATCH_47 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#D21034",
+    colorDark: "#00662F",
+    goals: 3,
+    scorers: [
+      { name: "Rafael Leão", minute: "18'" },
+      { name: "Bruno Fernandes", minute: "44'" },
+      { name: "Gonçalo Ramos", minute: "79'" }
+    ],
+    possession: 65,
+    shotsOnTarget: 8,
+    passAccuracy: 89,
+    distanceCovered: 109,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.6, 0.8]
+  },
+  away: {
+    name: "Uzbekistan",
+    shortName: "UZB",
+    color: "#0099B5",
+    colorDark: "#1C355E",
+    goals: 0,
+    scorers: [],
+    possession: 35,
+    shotsOnTarget: 1,
+    passAccuracy: 72,
+    distanceCovered: 114,
+    intensity: [0.8, 0.6, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "23 JUN 2026",
+  venue: "MIAMI STADIUM",
+  stage: "GROUP K",
+  matchNumber: "47"
+};
+
+// MATCH 48: DR Congo vs Colombia (Group K)
+const MATCH_48 = {
+  home: {
+    name: "DR Congo",
+    shortName: "COD",
+    color: "#007FFF",
+    colorDark: "#F7D117",
+    goals: 1,
+    scorers: [
+      { name: "Chancel Mbemba", minute: "60'" }
+    ],
+    possession: 40,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Colombia",
+    shortName: "COL",
+    color: "#FCD116",
+    colorDark: "#003893",
+    goals: 2,
+    scorers: [
+      { name: "Luis Díaz", minute: "27'" },
+      { name: "Rafael Santos Borré", minute: "83'" }
+    ],
+    possession: 60,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 111,
+    intensity: [0.6, 0.8, 0.7, 0.7, 0.8, 0.7]
+  },
+  date: "23 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "GROUP K",
+  matchNumber: "48"
+};
+
+// MATCH 49: England vs Ghana (Group L)
+const MATCH_49 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Jude Bellingham", minute: "35'" },
+      { name: "Bukayo Saka", minute: "62'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.9]
+  },
+  away: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFE300",
+    colorDark: "#E30613",
+    goals: 1,
+    scorers: [
+      { name: "Inaki Williams", minute: "74'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 4,
+    passAccuracy: 79,
+    distanceCovered: 116,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.6, 0.6]
+  },
+  date: "24 JUN 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "GROUP L",
+  matchNumber: "49"
+};
+
+// MATCH 50: Croatia vs Panama (Group L)
+const MATCH_50 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Mateo Kovačić", minute: "41'" },
+      { name: "Andrej Kramarić", minute: "68'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 5,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.6, 0.7, 0.7, 0.7, 0.6, 0.8]
+  },
+  away: {
+    name: "Panama",
+    shortName: "PAN",
+    color: "#DA121A",
+    colorDark: "#072357",
+    goals: 0,
+    scorers: [],
+    possession: 41,
+    shotsOnTarget: 2,
+    passAccuracy: 76,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "24 JUN 2026",
+  venue: "SAN FRANCISCO BAY AREA STADIUM",
+  stage: "GROUP L",
+  matchNumber: "50"
+};
+// MATCH 51: Switzerland vs Canada (Group B)
+const MATCH_51 = {
+  home: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Breel Embolo", minute: "54'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 4,
+    passAccuracy: 83,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.7, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Jonathan David", minute: "38'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.8, 0.6]
+  },
+  date: "24 JUN 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "GROUP B",
+  matchNumber: "51"
+};
+
+// MATCH 52: Bosnia and Herzegovina vs Qatar (Group B)
+const MATCH_52 = {
+  home: {
+    name: "Bosnia and Herzegovina",
+    shortName: "BIH",
+    color: "#002F6C",
+    colorDark: "#FFCD00",
+    goals: 2,
+    scorers: [
+      { name: "Edin Džeko", minute: "22'" },
+      { name: "Ermedin Demirović", minute: "67'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.6, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 108,
+    intensity: [0.5, 0.6, 0.5, 0.5, 0.4, 0.4]
+  },
+  date: "24 JUN 2026",
+  venue: "SEATTLE STADIUM",
+  stage: "GROUP B",
+  matchNumber: "52"
+};
+
+// MATCH 53: Czechia vs Mexico (Group A)
+const MATCH_53 = {
+  home: {
+    name: "Czechia",
+    shortName: "CZE",
+    color: "#11457E",
+    colorDark: "#D7141A",
+    goals: 1,
+    scorers: [
+      { name: "Patrik Schick", minute: "45'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Santiago Giménez", minute: "17'" },
+      { name: "Luis Chávez", minute: "73'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.7, 0.7, 0.8, 0.7]
+  },
+  date: "24 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "GROUP A",
+  matchNumber: "53"
+};
+
+// MATCH 54: South Africa vs South Korea (Group A)
+const MATCH_54 = {
+  home: {
+    name: "South Africa",
+    shortName: "RSA",
+    color: "#007A4D",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Percy Tau", minute: "61'" }
+    ],
+    possession: 43,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 111,
+    intensity: [0.6, 0.6, 0.7, 0.5, 0.6, 0.5]
+  },
+  away: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Son Heung-min", minute: "29'" },
+      { name: "Lee Kang-in", minute: "84'" }
+    ],
+    possession: 57,
+    shotsOnTarget: 5,
+    passAccuracy: 86,
+    distanceCovered: 116,
+    intensity: [0.7, 0.8, 0.8, 0.7, 0.7, 0.8]
+  },
+  date: "24 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "GROUP A",
+  matchNumber: "54"
+};
+
+// MATCH 55: Brazil vs Scotland (Group C)
+const MATCH_55 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 2,
+    scorers: [
+      { name: "Vinícius Júnior", minute: "41'" },
+      { name: "Rodrygo", minute: "70'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 6,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Scotland",
+    shortName: "SCO",
+    color: "#002B66",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 39,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.7, 0.6, 0.5, 0.5]
+  },
+  date: "24 JUN 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "GROUP C",
+  matchNumber: "55"
+};
+
+// MATCH 56: Morocco vs Haiti (Group C)
+const MATCH_56 = {
+  home: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 3,
+    scorers: [
+      { name: "Hakim Ziyech", minute: "19'" },
+      { name: "Youssef En-Nesyri", minute: "52'" },
+      { name: "Achraf Hakimi", minute: "81'" }
+    ],
+    possession: 63,
+    shotsOnTarget: 7,
+    passAccuracy: 87,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.7, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Haiti",
+    shortName: "HAI",
+    color: "#00209F",
+    colorDark: "#D21034",
+    goals: 0,
+    scorers: [],
+    possession: 37,
+    shotsOnTarget: 1,
+    passAccuracy: 72,
+    distanceCovered: 108,
+    intensity: [0.6, 0.5, 0.6, 0.5, 0.4, 0.4]
+  },
+  date: "24 JUN 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "GROUP C",
+  matchNumber: "56"
+};
+
+// MATCH 57: United States vs Türkiye (Group D)
+const MATCH_57 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#002868",
+    colorDark: "#BF0A30",
+    goals: 3,
+    scorers: [
+      { name: "Christian Pulisic", minute: "34'" },
+      { name: "Folarin Balogun", minute: "58'" },
+      { name: "Timothy Weah", minute: "79'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 7,
+    passAccuracy: 84,
+    distanceCovered: 114,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Türkiye",
+    shortName: "TUR",
+    color: "#E30A17",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Arda Güler", minute: "65'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 80,
+    distanceCovered: 113,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.7, 0.6]
+  },
+  date: "25 JUN 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "GROUP D",
+  matchNumber: "57"
+};
+
+// MATCH 58: Paraguay vs Australia (Group D)
+const MATCH_58 = {
+  home: {
+    name: "Paraguay",
+    shortName: "PAR",
+    color: "#D52B1E",
+    colorDark: "#0038A8",
+    goals: 1,
+    scorers: [
+      { name: "Miguel Almirón", minute: "42'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 4,
+    passAccuracy: 80,
+    distanceCovered: 112,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1,
+    scorers: [
+      { name: "Mitchell Duke", minute: "71'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "25 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP D",
+  matchNumber: "58"
+};
+
+// MATCH 59: Germany vs Ecuador (Group E)
+const MATCH_59 = {
+  home: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 3,
+    scorers: [
+      { name: "Jamal Musiala", minute: "24'" },
+      { name: "Kai Havertz", minute: "51'" },
+      { name: "Niclas Füllkrug", minute: "88'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 6,
+    passAccuracy: 89,
+    distanceCovered: 111,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.6, 0.8]
+  },
+  away: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFD100",
+    colorDark: "#00205B",
+    goals: 1,
+    scorers: [
+      { name: "Enner Valencia", minute: "63'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 113,
+    intensity: [0.8, 0.6, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "25 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP E",
+  matchNumber: "59"
+};
+
+// MATCH 60: Côte d'Ivoire vs Curaçao (Group E)
+const MATCH_60 = {
+  home: {
+    name: "Côte d'Ivoire",
+    shortName: "CIV",
+    color: "#F77F00",
+    colorDark: "#009E60",
+    goals: 2,
+    scorers: [
+      { name: "Sébastien Haller", minute: "35'" },
+      { name: "Simon Adingra", minute: "72'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.7, 0.6, 0.7]
+  },
+  away: {
+    name: "Curaçao",
+    shortName: "CUW",
+    color: "#002B7F",
+    colorDark: "#F9E814",
+    goals: 0,
+    scorers: [],
+    possession: 38,
+    shotsOnTarget: 1,
+    passAccuracy: 74,
+    distanceCovered: 106,
+    intensity: [0.7, 0.8, 0.6, 0.5, 0.6, 0.5]
+  },
+  date: "25 JUN 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "GROUP E",
+  matchNumber: "60"
+};
+// MATCH 61: France vs Norway (Group I)
+const MATCH_61 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#ED2939",
+    goals: 1,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "58'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 1,
+    scorers: [
+      { name: "Erling Haaland", minute: "14'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 116,
+    intensity: [0.8, 0.6, 0.7, 0.7, 0.9, 0.7]
+  },
+  date: "26 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "GROUP I",
+  matchNumber: "61"
+};
+
+// MATCH 62: Senegal vs Iraq (Group I)
+const MATCH_62 = {
+  home: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 2,
+    scorers: [
+      { name: "Ismaïla Sarr", minute: "41'" },
+      { name: "Nicolas Jackson", minute: "76'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Iraq",
+    shortName: "IRQ",
+    color: "#007A3D",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 45,
+    shotsOnTarget: 2,
+    passAccuracy: 74,
+    distanceCovered: 109,
+    intensity: [0.6, 0.6, 0.5, 0.5, 0.4, 0.5]
+  },
+  date: "26 JUN 2026",
+  venue: "TORONTO STADIUM",
+  stage: "GROUP I",
+  matchNumber: "62"
+};
+
+// MATCH 63: Belgium vs New Zealand (Group G)
+const MATCH_63 = {
+  home: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 3,
+    scorers: [
+      { name: "Romelu Lukaku", minute: "22'" },
+      { name: "Lois Openda", minute: "49'" },
+      { name: "Leandro Trossard", minute: "83'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 8,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "New Zealand",
+    shortName: "NZL",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 39,
+    shotsOnTarget: 1,
+    passAccuracy: 71,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "26 JUN 2026",
+  venue: "SEATTLE STADIUM",
+  stage: "GROUP G",
+  matchNumber: "63"
+};
+
+// MATCH 64: Egypt vs IR Iran (Group G)
+const MATCH_64 = {
+  home: {
+    name: "Egypt",
+    shortName: "EGY",
+    color: "#CE1126",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Mohamed Salah", minute: "66'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 4,
+    passAccuracy: 79,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.7, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "IR Iran",
+    shortName: "IRN",
+    color: "#239F40",
+    colorDark: "#DA291C",
+    goals: 1,
+    scorers: [
+      { name: "Sardar Azmoun", minute: "34'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.6, 0.7, 0.6, 0.6]
+  },
+  date: "26 JUN 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "GROUP G",
+  matchNumber: "64"
+};
+
+// MATCH 65: Spain vs Uruguay (Group H)
+const MATCH_65 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 1,
+    scorers: [
+      { name: "Dani Olmo", minute: "74'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 5,
+    passAccuracy: 90,
+    distanceCovered: 111,
+    intensity: [0.7, 0.8, 0.8, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#55B5E5",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 36,
+    shotsOnTarget: 2,
+    passAccuracy: 76,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.7, 0.6, 0.7, 0.6]
+  },
+  date: "26 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "GROUP H",
+  matchNumber: "65"
+};
+
+// MATCH 66: Saudi Arabia vs Cabo Verde (Group H)
+const MATCH_66 = {
+  home: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Firas Al-Buraikan", minute: "29'" },
+      { name: "Salem Al-Dawsari", minute: "53'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 6,
+    passAccuracy: 83,
+    distanceCovered: 113,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Cabo Verde",
+    shortName: "CPV",
+    color: "#003893",
+    colorDark: "#CF2027",
+    goals: 1,
+    scorers: [
+      { name: "Ryan Mendes", minute: "81'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 3,
+    passAccuracy: 75,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "26 JUN 2026",
+  venue: "GUADALAJARA STADIUM",
+  stage: "GROUP H",
+  matchNumber: "66"
+};
+
+// MATCH 67: England vs Panama (Group L)
+const MATCH_67 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#CE1126",
+    goals: 3,
+    scorers: [
+      { name: "Harry Kane", minute: "18'" },
+      { name: "Ollie Watkins", minute: "64'" },
+      { name: "Phil Foden", minute: "87'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 7,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Panama",
+    shortName: "PAN",
+    color: "#DA121A",
+    colorDark: "#072357",
+    goals: 0,
+    scorers: [],
+    possession: 41,
+    shotsOnTarget: 1,
+    passAccuracy: 74,
+    distanceCovered: 108,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "27 JUN 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "GROUP L",
+  matchNumber: "67"
+};
+
+// MATCH 68: Croatia vs Ghana (Group L)
+const MATCH_68 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Andrej Kramarić", minute: "55'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.6, 0.7]
+  },
+  away: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFE300",
+    colorDark: "#E30613",
+    goals: 1,
+    scorers: [
+      { name: "Mohammed Kudus", minute: "72'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 116,
+    intensity: [0.7, 0.6, 0.6, 0.7, 0.8, 0.6]
+  },
+  date: "27 JUN 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "GROUP L",
+  matchNumber: "68"
+};
+
+// MATCH 69: Argentina vs Jordan (Group J)
+const MATCH_69 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#43A1D5",
+    colorDark: "#FFFFFF",
+    goals: 5,
+    scorers: [
+      { name: "Lionel Messi", minute: "12'" },
+      { name: "Julián Álvarez", minute: "34'" },
+      { name: "Lionel Messi", minute: "45+1'" },
+      { name: "Enzo Fernández", minute: "61'" },
+      { name: "Lautaro Martínez", minute: "78'" }
+    ],
+    possession: 67,
+    shotsOnTarget: 11,
+    passAccuracy: 91,
+    distanceCovered: 109,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.6, 0.8]
+  },
+  away: {
+    name: "Jordan",
+    shortName: "JOR",
+    color: "#000000",
+    colorDark: "#CE1126",
+    goals: 0,
+    scorers: [],
+    possession: 33,
+    shotsOnTarget: 1,
+    passAccuracy: 70,
+    distanceCovered: 111,
+    intensity: [0.6, 0.5, 0.6, 0.5, 0.4, 0.4]
+  },
+  date: "27 JUN 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "GROUP J",
+  matchNumber: "69"
+};
+
+// MATCH 70: Austria vs Algeria (Group J)
+const MATCH_70 = {
+  home: {
+    name: "Austria",
+    shortName: "AUT",
+    color: "#ED2939",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Christoph Baumgartner", minute: "40'" },
+      { name: "Michael Gregoritsch", minute: "82'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.6, 0.7, 0.7, 0.6]
+  },
+  away: {
+    name: "Algeria",
+    shortName: "ALG",
+    color: "#006233",
+    colorDark: "#D21034",
+    goals: 1,
+    scorers: [
+      { name: "Saïd Benrahma", minute: "19'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 3,
+    passAccuracy: 77,
+    distanceCovered: 115,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.5]
+  },
+  date: "27 JUN 2026",
+  venue: "DALLAS STADIUM",
+  stage: "GROUP J",
+  matchNumber: "70"
+};
+// MATCH 71: Portugal vs Colombia (Group K Decider)
+const MATCH_71 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#D21034",
+    colorDark: "#00662F",
+    goals: 2,
+    scorers: [
+      { name: "Bruno Fernandes", minute: "38'" },
+      { name: "Rafael Leão", minute: "61'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.8, 0.6, 0.7, 0.8]
+  },
+  away: {
+    name: "Colombia",
+    shortName: "COL",
+    color: "#FCD116",
+    colorDark: "#003893",
+    goals: 1,
+    scorers: [
+      { name: "Luis Díaz", minute: "19'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 115,
+    intensity: [0.8, 0.8, 0.6, 0.7, 0.8, 0.6]
+  },
+  date: "27 JUN 2026",
+  venue: "GUADALAJARA STADIUM",
+  stage: "GROUP K",
+  matchNumber: "71"
+};
+
+// MATCH 72: DR Congo vs Uzbekistan (Group K)
+const MATCH_72 = {
+  home: {
+    name: "DR Congo",
+    shortName: "COD",
+    color: "#007FFF",
+    colorDark: "#F7D117",
+    goals: 1,
+    scorers: [
+      { name: "Yoane Wissa", minute: "54'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 81,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Uzbekistan",
+    shortName: "UZB",
+    color: "#0099B5",
+    colorDark: "#1C355E",
+    goals: 0,
+    scorers: [],
+    possession: 45,
+    shotsOnTarget: 2,
+    passAccuracy: 76,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.5]
+  },
+  date: "27 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "GROUP K",
+  matchNumber: "72"
+};
+
+// MATCH 73: South Africa vs Canada (Round of 32)
+const MATCH_73 = {
+  home: {
+    name: "South Africa",
+    shortName: "RSA",
+    color: "#007A4D",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 118,
+    intensity: [0.8, 0.7, 0.6, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Jonathan David", minute: "68'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 116,
+    intensity: [0.7, 0.7, 0.8, 0.8, 0.7, 0.8]
+  },
+  date: "28 JUN 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "73"
+};
+
+// MATCH 74: Germany vs Algeria (Round of 32)
+const MATCH_74 = {
+  home: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 3,
+    scorers: [
+      { name: "Kai Havertz", minute: "24'" },
+      { name: "Jamal Musiala", minute: "51'" },
+      { name: "Florian Wirtz", minute: "79'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 8,
+    passAccuracy: 89,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Algeria",
+    shortName: "ALG",
+    color: "#006233",
+    colorDark: "#D21034",
+    goals: 1,
+    scorers: [
+      { name: "Amine Gouiri", minute: "43'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 3,
+    passAccuracy: 75,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "29 JUN 2026",
+  venue: "BOSTON STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "74"
+};
+
+// MATCH 75: Netherlands vs Scotland (Round of 32)
+const MATCH_75 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Cody Gakpo", minute: "31'" },
+      { name: "Xavi Simons", minute: "72'" }
+    ],
+    possession: 57,
+    shotsOnTarget: 6,
+    passAccuracy: 87,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.7, 0.7]
+  },
+  away: {
+    name: "Scotland",
+    shortName: "SCO",
+    color: "#002B66",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 43,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 114,
+    intensity: [0.7, 0.8, 0.6, 0.6, 0.5, 0.5]
+  },
+  date: "29 JUN 2026",
+  venue: "ESTADIO MONTERREY",
+  stage: "ROUND OF 32",
+  matchNumber: "75"
+};
+
+// MATCH 76: Brazil vs Czechia (Round of 32)
+const MATCH_76 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 3,
+    scorers: [
+      { name: "Vinícius Júnior", minute: "14'" },
+      { name: "Rodrygo", minute: "44'" },
+      { name: "Neymar Jr", minute: "81'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 7,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Czechia",
+    shortName: "CZE",
+    color: "#11457E",
+    colorDark: "#D7141A",
+    goals: 1,
+    scorers: [
+      { name: "Tomáš Souček", minute: "62'" }
+    ],
+    possession: 41,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 113,
+    intensity: [0.8, 0.6, 0.6, 0.5, 0.6, 0.5]
+  },
+  date: "29 JUN 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "76"
+};
+
+// MATCH 77: France vs Morocco (Round of 32)
+const MATCH_77 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#ED2939",
+    goals: 2,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "29'" },
+      { name: "Marcus Thuram", minute: "74'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 5,
+    passAccuracy: 86,
+    distanceCovered: 113,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 1,
+    scorers: [
+      { name: "Youssef En-Nesyri", minute: "58'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.7, 0.6, 0.7, 0.6]
+  },
+  date: "30 JUN 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "77"
+};
+
+// MATCH 78: Côte d'Ivoire vs Norway (Round of 32)
+const MATCH_78 = {
+  home: {
+    name: "Côte d'Ivoire",
+    shortName: "CIV",
+    color: "#F77F00",
+    colorDark: "#009E60",
+    goals: 1,
+    scorers: [
+      { name: "Simon Adingra", minute: "41'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 114,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.6]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 2,
+    scorers: [
+      { name: "Erling Haaland", minute: "19'" },
+      { name: "Erling Haaland", minute: "84'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 6,
+    passAccuracy: 83,
+    distanceCovered: 117,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.9, 0.9]
+  },
+  date: "30 JUN 2026",
+  venue: "DALLAS STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "78"
+};
+
+// MATCH 79: Mexico vs South Korea (Round of 32)
+const MATCH_79 = {
+  home: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Santiago Giménez", minute: "34'" },
+      { name: "Luis Chávez", minute: "68'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.8, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Son Heung-min", minute: "55'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 3,
+    passAccuracy: 80,
+    distanceCovered: 115,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.5, 0.6]
+  },
+  date: "30 JUN 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "79"
+};
+
+// MATCH 80: England vs Switzerland (Round of 32)
+const MATCH_80 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#CE1126",
+    goals: 1,
+    scorers: [
+      { name: "Harry Kane", minute: "73'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 4,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.9]
+  },
+  away: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 1,
+    passAccuracy: 77,
+    distanceCovered: 111,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "01 JUL 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "80"
+};
+// MATCH 81: United States vs Bosnia and Herzegovina (Round of 32)
+const MATCH_81 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#002868",
+    colorDark: "#BF0A30",
+    goals: 2,
+    scorers: [
+      { name: "Christian Pulisic", minute: "41'" },
+      { name: "Ricardo Pepi", minute: "78'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 6,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.6, 0.8]
+  },
+  away: {
+    name: "Bosnia and Herzegovina",
+    shortName: "BIH",
+    color: "#002F6C",
+    colorDark: "#FFCD00",
+    goals: 0,
+    scorers: [],
+    possession: 42,
+    shotsOnTarget: 2,
+    passAccuracy: 75,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.5, 0.4]
+  },
+  date: "02 JUL 2026",
+  venue: "SAN FRANCISCO BAY AREA STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "81"
+};
+
+// MATCH 82: Spain vs Austria (Round of 32)
+const MATCH_82 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 3,
+    scorers: [
+      { name: "Nico Williams", minute: "19'" },
+      { name: "Álvaro Morata", minute: "44'" },
+      { name: "Dani Olmo", minute: "71'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 8,
+    passAccuracy: 90,
+    distanceCovered: 111,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Austria",
+    shortName: "AUT",
+    color: "#ED2939",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 36,
+    shotsOnTarget: 1,
+    passAccuracy: 76,
+    distanceCovered: 114,
+    intensity: [0.8, 0.7, 0.6, 0.6, 0.5, 0.5]
+  },
+  date: "02 JUL 2026",
+  venue: "LOS ANGELES STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "82"
+};
+
+// MATCH 83: Portugal vs Croatia (Round of 32)
+const MATCH_83 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#D21034",
+    colorDark: "#00662F",
+    goals: 2,
+    scorers: [
+      { name: "Cristiano Ronaldo", minute: "35'" },
+      { name: "Bruno Fernandes", minute: "81'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Luka Modrić", minute: "59'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 4,
+    passAccuracy: 82,
+    distanceCovered: 112,
+    intensity: [0.7, 0.8, 0.6, 0.7, 0.6, 0.7]
+  },
+  date: "02 JUL 2026",
+  venue: "TORONTO STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "83"
+};
+
+// MATCH 84: Switzerland vs Algeria (Round of 32)
+const MATCH_84 = {
+  home: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Breel Embolo", minute: "24'" },
+      { name: "Xherdan Shaqiri", minute: "68'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 6,
+    passAccuracy: 86,
+    distanceCovered: 110,
+    intensity: [0.7, 0.8, 0.7, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Algeria",
+    shortName: "ALG",
+    color: "#006233",
+    colorDark: "#D21034",
+    goals: 0,
+    scorers: [],
+    possession: 41,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 113,
+    intensity: [0.8, 0.6, 0.6, 0.5, 0.6, 0.4]
+  },
+  date: "03 JUL 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "ROUND OF 32",
+  matchNumber: "84"
+};
+
+// MATCH 85: Argentina vs Cabo Verde (Round of 32)
+const MATCH_85 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#43A1D5",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Lionel Messi", minute: "14'" },
+      { name: "Lautaro Martínez", minute: "55'" },
+      { name: "Julián Álvarez", minute: "104'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 9,
+    passAccuracy: 88,
+    distanceCovered: 121,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.8, 0.5]
+  },
+  away: {
+    name: "Cabo Verde",
+    shortName: "CPV",
+    color: "#003893",
+    colorDark: "#CF2027",
+    goals: 2,
+    scorers: [
+      { name: "Ryan Mendes", minute: "38'" },
+      { name: "Bebé", minute: "82'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 4,
+    passAccuracy: 73,
+    distanceCovered: 124,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.5, 0.6]
+  },
+  date: "03 JUL 2026",
+  venue: "MIAMI STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "85"
+};
+
+// MATCH 86: Colombia vs Ghana (Round of 32)
+const MATCH_86 = {
+  home: {
+    name: "Colombia",
+    shortName: "COL",
+    color: "#FCD116",
+    colorDark: "#003893",
+    goals: 1,
+    scorers: [
+      { name: "Luis Díaz", minute: "67'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 4,
+    passAccuracy: 83,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.7, 0.7, 0.8, 0.7]
+  },
+  away: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFE300",
+    colorDark: "#E30613",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 116,
+    intensity: [0.7, 0.8, 0.6, 0.6, 0.6, 0.5]
+  },
+  date: "04 JUL 2026",
+  venue: "KANSAS CITY STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "86"
+};
+
+// MATCH 87: Australia vs Egypt (Round of 32)
+const MATCH_87 = {
+  home: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1, // 2-4 on penalties
+    scorers: [
+      { name: "Mitchell Duke", minute: "52'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 122,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Egypt",
+    shortName: "EGY",
+    color: "#CE1126",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Mohamed Salah", minute: "29'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 125,
+    intensity: [0.6, 0.7, 0.8, 0.7, 0.8, 0.8]
+  },
+  date: "03 JUL 2026",
+  venue: "DALLAS STADIUM",
+  stage: "ROUND OF 32",
+  matchNumber: "87"
+};
+
+// MATCH 88: Canada vs Morocco (Round of 16)
+const MATCH_88 = {
+  home: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 45,
+    shotsOnTarget: 2,
+    passAccuracy: 79,
+    distanceCovered: 112,
+    intensity: [0.6, 0.6, 0.7, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 3,
+    scorers: [
+      { name: "Youssef En-Nesyri", minute: "22'" },
+      { name: "Hakim Ziyech", minute: "48'" },
+      { name: "Achraf Hakimi", minute: "79'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 7,
+    passAccuracy: 86,
+    distanceCovered: 115,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.8, 0.7]
+  },
+  date: "04 JUL 2026",
+  venue: "HOUSTON STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "88"
+};
+
+// MATCH 89: Paraguay vs France (Round of 16)
+const MATCH_89 = {
+  home: {
+    name: "Paraguay",
+    shortName: "PAR",
+    color: "#D52B1E",
+    colorDark: "#0038A8",
+    goals: 0,
+    scorers: [],
+    possession: 38,
+    shotsOnTarget: 1,
+    passAccuracy: 71,
+    distanceCovered: 116,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#ED2939",
+    goals: 1,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "54'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 6,
+    passAccuracy: 89,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.8, 0.8, 0.7, 0.9]
+  },
+  date: "04 JUL 2026",
+  venue: "PHILADELPHIA STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "89"
+};
+
+// MATCH 90: Brazil vs Norway (Round of 16)
+const MATCH_90 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 1,
+    scorers: [
+      { name: "Neymar Jr", minute: "90+6'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 4,
+    passAccuracy: 86,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 2,
+    scorers: [
+      { name: "Erling Haaland", minute: "78'" },
+      { name: "Erling Haaland", minute: "84'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 5,
+    passAccuracy: 79,
+    distanceCovered: 118,
+    intensity: [0.7, 0.6, 0.7, 0.8, 0.9, 0.9]
+  },
+  date: "05 JUL 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "90"
+};
+// MATCH 91: Brazil vs Norway (Round of 16)
+const MATCH_91 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 1,
+    scorers: [
+      { name: "Neymar Jr", minute: "90+6'" }
+    ],
+    possession: 56,
+    shotsOnTarget: 4,
+    passAccuracy: 86,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.8, 0.7]
+  },
+  away: {
+    name: "Norway",
+    shortName: "NOR",
+    color: "#EF2B2D",
+    colorDark: "#002868",
+    goals: 2,
+    scorers: [
+      { name: "Erling Haaland", minute: "78'" },
+      { name: "Erling Haaland", minute: "84'" }
+    ],
+    possession: 44,
+    shotsOnTarget: 5,
+    passAccuracy: 79,
+    distanceCovered: 118,
+    intensity: [0.7, 0.6, 0.7, 0.8, 0.9, 0.9]
+  },
+  date: "05 JUL 2026",
+  venue: "NEW YORK NEW JERSEY STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "91"
+};
+
+// MATCH 92: Mexico vs England (Round of 16)
+const MATCH_92 = {
+  home: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Santiago Giménez", minute: "18'" },
+      { name: "Luis Chávez", minute: "63'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 113,
+    intensity: [0.8, 0.7, 0.8, 0.7, 0.6, 0.7]
+  },
+  away: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#CE1126",
+    goals: 3,
+    scorers: [
+      { name: "Jude Bellingham", minute: "31'" },
+      { name: "Harry Kane", minute: "48'" },
+      { name: "Jude Bellingham", minute: "75'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 6,
+    passAccuracy: 83,
+    distanceCovered: 115,
+    intensity: [0.7, 0.8, 0.7, 0.8, 0.8, 0.9]
+  },
+  date: "05 JUL 2026",
+  venue: "MEXICO CITY STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "92"
+};
+
+// MATCH 93: Portugal vs Spain (Round of 16)
+const MATCH_93 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#D21034",
+    colorDark: "#00662F",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 112,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.7, 0.5]
+  },
+  away: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#AA151B",
+    colorDark: "#F1BF00",
+    goals: 1,
+    scorers: [
+      { name: "Dani Olmo", minute: "54'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 5,
+    passAccuracy: 87,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.8, 0.8]
+  },
+  date: "06 JUL 2026",
+  venue: "DALLAS STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "93"
+};
+
+// MATCH 94: United States vs Belgium (Round of 16)
+const MATCH_94 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#002868",
+    colorDark: "#BF0A30",
+    goals: 1,
+    scorers: [
+      { name: "Christian Pulisic", minute: "41'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 4,
+    passAccuracy: 79,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 4,
+    scorers: [
+      { name: "Charles De Ketelaere", minute: "12'" },
+      { name: "Hans Vanaken", minute: "29'" },
+      { name: "Charles De Ketelaere", minute: "67'" },
+      { name: "Romelu Lukaku", minute: "85'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 9,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.8, 0.8, 0.7, 0.8, 0.7, 0.9]
+  },
+  date: "06 JUL 2026",
+  venue: "SEATTLE STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "94"
+};
+
+// MATCH 95: Argentina vs Egypt (Round of 16)
+const MATCH_95 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#43A1D5",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Cristian Romero", minute: "78'" },
+      { name: "Lionel Messi", minute: "83'" },
+      { name: "Enzo Fernández", minute: "88'" }
+    ],
+    possession: 60,
+    shotsOnTarget: 7,
+    passAccuracy: 88,
+    distanceCovered: 114,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.9, 0.9]
+  },
+  away: {
+    name: "Egypt",
+    shortName: "EGY",
+    color: "#CE1126",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "Mostafa Mohamed", minute: "14'" },
+      { name: "Mohamed Salah", minute: "41'" }
+    ],
+    possession: 40,
+    shotsOnTarget: 4,
+    passAccuracy: 76,
+    distanceCovered: 116,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.5, 0.4]
+  },
+  date: "07 JUL 2026",
+  venue: "ATLANTA STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "95"
+};
+
+// MATCH 96: Switzerland vs Colombia (Round of 16)
+const MATCH_96 = {
+  home: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 0, // Advanced 4-3 on penalties
+    scorers: [],
+    possession: 48,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 123,
+    intensity: [0.7, 0.7, 0.6, 0.7, 0.6, 0.6]
+  },
+  away: {
+    name: "Colombia",
+    shortName: "COL",
+    color: "#FCD116",
+    colorDark: "#003893",
+    goals: 0,
+    scorers: [],
+    possession: 52,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 121,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.8, 0.7]
+  },
+  date: "07 JUL 2026",
+  venue: "BC PLACE VANCOUVER",
+  stage: "ROUND OF 16",
+  matchNumber: "96"
+};

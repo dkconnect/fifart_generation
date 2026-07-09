@@ -1,0 +1,2440 @@
+// MATCH 1: Opening Match
+const MATCH_1 = {
+  home: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 47,
+    shotsOnTarget: 0,
+    passAccuracy: 81,
+    distanceCovered: 105,
+    intensity: [0.6, 0.5, 0.5, 0.4, 0.5, 0.4]
+  },
+
+  away: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFDD00",
+    colorDark: "#0033A0",
+    goals: 2,
+    scorers: [
+      { name: "Enner Valencia", minute: "16' (P)" },
+      { name: "Enner Valencia", minute: "31'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 3,
+    passAccuracy: 85,
+    distanceCovered: 108,
+    intensity: [0.8, 0.8, 0.7, 0.5, 0.6, 0.4]
+  },
+
+  date: "20 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP A",
+  matchNumber: "1"
+};
+
+// MATCH 2: Senegal vs Netherlands (Group A)
+const MATCH_2 = {
+  home: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 4,
+    passAccuracy: 80,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.5, 0.4]
+  },
+  away: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Cody Gakpo", minute: "84'" },
+      { name: "Davy Klaassen", minute: "90+9'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 3,
+    passAccuracy: 84,
+    distanceCovered: 114,
+    intensity: [0.6, 0.6, 0.6, 0.7, 0.8, 0.9]
+  },
+  date: "21 NOV 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP A",
+  matchNumber: "2"
+};
+
+// MATCH 3: England vs Iran (Group B)
+const MATCH_3 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#002040",
+    goals: 6,
+    scorers: [
+      { name: "Jude Bellingham", minute: "35'" },
+      { name: "Bukayo Saka", minute: "43'" },
+      { name: "Raheem Sterling", minute: "45+1'" },
+      { name: "Bukayo Saka", minute: "62'" },
+      { name: "Marcus Rashford", minute: "71'" },
+      { name: "Jack Grealish", minute: "90'" }
+    ],
+    possession: 78,
+    shotsOnTarget: 7,
+    passAccuracy: 90,
+    distanceCovered: 109,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Iran",
+    shortName: "IRN",
+    color: "#239E46",
+    colorDark: "#DA251D",
+    goals: 2,
+    scorers: [
+      { name: "Mehdi Taremi", minute: "65'" },
+      { name: "Mehdi Taremi", minute: "90+13' (P)" }
+    ],
+    possession: 22,
+    shotsOnTarget: 3,
+    passAccuracy: 66,
+    distanceCovered: 111,
+    intensity: [0.4, 0.5, 0.4, 0.6, 0.5, 0.4]
+  },
+  date: "21 NOV 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "GROUP B",
+  matchNumber: "3"
+};
+
+// MATCH 4: United States vs Wales (Group B)
+const MATCH_4 = {
+  home: {
+    name: "United States",
+    shortName: "USA",
+    color: "#0A2342",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Timothy Weah", minute: "36'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 1,
+    passAccuracy: 87,
+    distanceCovered: 118,
+    intensity: [0.8, 0.7, 0.7, 0.5, 0.5, 0.4]
+  },
+  away: {
+    name: "Wales",
+    shortName: "WAL",
+    color: "#A6192E",
+    colorDark: "#00AD43",
+    goals: 1,
+    scorers: [
+      { name: "Gareth Bale", minute: "82' (P)" }
+    ],
+    possession: 41,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 115,
+    intensity: [0.5, 0.5, 0.6, 0.7, 0.8, 0.7]
+  },
+  date: "21 NOV 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP B",
+  matchNumber: "4"
+};
+
+// MATCH 5: Argentina vs Saudi Arabia (Group C)
+const MATCH_5 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Lionel Messi", minute: "10' (P)" }
+    ],
+    possession: 70,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.5, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Saleh Al-Shehri", minute: "48'" },
+      { name: "Salem Al-Dawsari", minute: "53'" }
+    ],
+    possession: 30,
+    shotsOnTarget: 2,
+    passAccuracy: 69,
+    distanceCovered: 117,
+    intensity: [0.5, 0.6, 0.9, 0.8, 0.7, 0.8]
+  },
+  date: "22 NOV 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP C",
+  matchNumber: "5"
+};
+
+// MATCH 6: Denmark vs Tunisia (Group D)
+const MATCH_6 = {
+  home: {
+    name: "Denmark",
+    shortName: "DEN",
+    color: "#C60C30",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 62,
+    shotsOnTarget: 5,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.6, 0.6, 0.6, 0.7, 0.6, 0.7]
+  },
+  away: {
+    name: "Tunisia",
+    shortName: "TUN",
+    color: "#E2011A",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 38,
+    shotsOnTarget: 1,
+    passAccuracy: 75,
+    distanceCovered: 114,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.5, 0.6]
+  },
+  date: "22 NOV 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP D",
+  matchNumber: "6"
+};
+
+// MATCH 7: Mexico vs Poland (Group C)
+const MATCH_7 = {
+  home: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 0,
+    scorers: [],
+    possession: 61,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 108,
+    intensity: [0.7, 0.6, 0.7, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Poland",
+    shortName: "POL",
+    color: "#DC143C",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 39,
+    shotsOnTarget: 2,
+    passAccuracy: 72,
+    distanceCovered: 110,
+    intensity: [0.5, 0.5, 0.6, 0.6, 0.6, 0.5]
+  },
+  date: "22 NOV 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP C",
+  matchNumber: "7"
+};
+
+// MATCH 8: France vs Australia (Group D)
+const MATCH_8 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 4,
+    scorers: [
+      { name: "Adrien Rabiot", minute: "27'" },
+      { name: "Olivier Giroud", minute: "32'" },
+      { name: "Kylian Mbappé", minute: "68'" },
+      { name: "Olivier Giroud", minute: "71'" }
+    ],
+    possession: 63,
+    shotsOnTarget: 7,
+    passAccuracy: 89,
+    distanceCovered: 111,
+    intensity: [0.5, 0.8, 0.7, 0.8, 0.7, 0.6]
+  },
+  away: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1,
+    scorers: [
+      { name: "Craig Goodwin", minute: "9'" }
+    ],
+    possession: 37,
+    shotsOnTarget: 1,
+    passAccuracy: 78,
+    distanceCovered: 115,
+    intensity: [0.7, 0.5, 0.5, 0.4, 0.4, 0.3]
+  },
+  date: "22 NOV 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP D",
+  matchNumber: "8"
+};
+
+// MATCH 9: Morocco vs Croatia (Group F)
+const MATCH_9 = {
+  home: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 0,
+    scorers: [],
+    possession: 35,
+    shotsOnTarget: 2,
+    passAccuracy: 78,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.6, 0.5, 0.6, 0.6]
+  },
+  away: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 65,
+    shotsOnTarget: 2,
+    passAccuracy: 86,
+    distanceCovered: 115,
+    intensity: [0.6, 0.6, 0.5, 0.6, 0.5, 0.5]
+  },
+  date: "23 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP F",
+  matchNumber: "9"
+};
+
+// MATCH 10: Germany vs Japan (Group E)
+const MATCH_10 = {
+  home: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Ilkay Gündogan", minute: "33' (P)" }
+    ],
+    possession: 74,
+    shotsOnTarget: 9,
+    passAccuracy: 88,
+    distanceCovered: 116,
+    intensity: [0.7, 0.7, 0.6, 0.5, 0.5, 0.4]
+  },
+  away: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#0000FF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Ritsu Doan", minute: "75'" },
+      { name: "Takuma Asano", minute: "83'" }
+    ],
+    possession: 26,
+    shotsOnTarget: 4,
+    passAccuracy: 70,
+    distanceCovered: 119,
+    intensity: [0.5, 0.5, 0.6, 0.8, 0.9, 0.9]
+  },
+  date: "23 NOV 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "GROUP E",
+  matchNumber: "10"
+};
+
+// MATCH 11: Spain vs Costa Rica (Group E)
+const MATCH_11 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#C60B1E",
+    colorDark: "#F1BF00",
+    goals: 7,
+    scorers: [
+      { name: "Dani Olmo", minute: "11'" },
+      { name: "Marco Asensio", minute: "21'" },
+      { name: "Ferran Torres", minute: "31' (P)" },
+      { name: "Ferran Torres", minute: "54'" },
+      { name: "Gavi", minute: "74'" },
+      { name: "Carlos Soler", minute: "90'" },
+      { name: "Álvaro Morata", minute: "90+2'" }
+    ],
+    possession: 82,
+    shotsOnTarget: 8,
+    passAccuracy: 94,
+    distanceCovered: 111,
+    intensity: [0.8, 0.8, 0.7, 0.7, 0.6, 0.6]
+  },
+  away: {
+    name: "Costa Rica",
+    shortName: "CRC",
+    color: "#001489",
+    colorDark: "#DA291C",
+    goals: 0,
+    scorers: [],
+    possession: 18,
+    shotsOnTarget: 0,
+    passAccuracy: 61,
+    distanceCovered: 104,
+    intensity: [0.4, 0.4, 0.3, 0.3, 0.2, 0.2]
+  },
+  date: "23 NOV 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP E",
+  matchNumber: "11"
+};
+
+// MATCH 12: Belgium vs Canada (Group F)
+const MATCH_12 = {
+  home: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Michy Batshuayi", minute: "44'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 112,
+    intensity: [0.6, 0.5, 0.6, 0.5, 0.6, 0.5]
+  },
+  away: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 3,
+    passAccuracy: 77,
+    distanceCovered: 115,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.5, 0.5]
+  },
+  date: "23 NOV 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP F",
+  matchNumber: "12"
+};
+
+// MATCH 13: Switzerland vs Cameroon (Group G)
+const MATCH_13 = {
+  home: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Breel Embolo", minute: "48'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 3,
+    passAccuracy: 84,
+    distanceCovered: 110,
+    intensity: [0.6, 0.6, 0.7, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Cameroon",
+    shortName: "CMR",
+    color: "#007A5E",
+    colorDark: "#CE1126",
+    goals: 0,
+    scorers: [],
+    possession: 49,
+    shotsOnTarget: 5,
+    passAccuracy: 82,
+    distanceCovered: 108,
+    intensity: [0.7, 0.6, 0.5, 0.6, 0.4, 0.4]
+  },
+  date: "24 NOV 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP G",
+  matchNumber: "13"
+};
+
+// MATCH 14: Uruguay vs South Korea (Group H)
+const MATCH_14 = {
+  home: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#0081C6",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 56,
+    shotsOnTarget: 0,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.6, 0.6, 0.5, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#0047A0",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 0,
+    passAccuracy: 78,
+    distanceCovered: 113,
+    intensity: [0.7, 0.6, 0.6, 0.5, 0.6, 0.6]
+  },
+  date: "24 NOV 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP H",
+  matchNumber: "14"
+};
+
+// MATCH 15: Portugal vs Ghana (Group H)
+const MATCH_15 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 3,
+    scorers: [
+      { name: "Cristiano Ronaldo", minute: "65' (P)" },
+      { name: "João Félix", minute: "78'" },
+      { name: "Rafael Leão", minute: "80'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 5,
+    passAccuracy: 88,
+    distanceCovered: 109,
+    intensity: [0.5, 0.6, 0.7, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 2,
+    scorers: [
+      { name: "André Ayew", minute: "73'" },
+      { name: "Osman Bukari", minute: "89'" }
+    ],
+    possession: 38,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 112,
+    intensity: [0.6, 0.5, 0.6, 0.8, 0.7, 0.8]
+  },
+  date: "24 NOV 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP H",
+  matchNumber: "15"
+};
+
+// MATCH 16: Brazil vs Serbia (Group G)
+const MATCH_16 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 2,
+    scorers: [
+      { name: "Richarlison", minute: "62'" },
+      { name: "Richarlison", minute: "73'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 8,
+    passAccuracy: 86,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.8, 0.8, 0.7, 0.6]
+  },
+  away: {
+    name: "Serbia",
+    shortName: "SRB",
+    color: "#B72E3F",
+    colorDark: "#0C1C66",
+    goals: 0,
+    scorers: [],
+    possession: 42,
+    shotsOnTarget: 0,
+    passAccuracy: 78,
+    distanceCovered: 114,
+    intensity: [0.7, 0.6, 0.5, 0.4, 0.4, 0.3]
+  },
+  date: "24 NOV 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP G",
+  matchNumber: "16"
+};
+
+// MATCH 17: Wales vs Iran (Group B)
+const MATCH_17 = {
+  home: {
+    name: "Wales",
+    shortName: "WAL",
+    color: "#A6192E",
+    colorDark: "#00AD43",
+    goals: 0,
+    scorers: [],
+    possession: 62,
+    shotsOnTarget: 3,
+    passAccuracy: 80,
+    distanceCovered: 106,
+    intensity: [0.6, 0.5, 0.5, 0.6, 0.4, 0.3]
+  },
+  away: {
+    name: "Iran",
+    shortName: "IRN",
+    color: "#239E46",
+    colorDark: "#DA251D",
+    goals: 2,
+    scorers: [
+      { name: "Rouzbeh Cheshmi", minute: "90+8'" },
+      { name: "Ramin Rezaeian", minute: "90+11'" }
+    ],
+    possession: 38,
+    shotsOnTarget: 6,
+    passAccuracy: 71,
+    distanceCovered: 113,
+    intensity: [0.5, 0.6, 0.6, 0.7, 0.8, 0.9]
+  },
+  date: "25 NOV 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP B",
+  matchNumber: "17"
+};
+
+// MATCH 18: Qatar vs Senegal (Group A)
+const MATCH_18 = {
+  home: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Mohammed Muntari", minute: "78'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 79,
+    distanceCovered: 107,
+    intensity: [0.5, 0.5, 0.6, 0.7, 0.7, 0.5]
+  },
+  away: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 3,
+    scorers: [
+      { name: "Boulaye Dia", minute: "41'" },
+      { name: "Famara Diédhiou", minute: "48'" },
+      { name: "Bamba Dieng", minute: "84'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 111,
+    intensity: [0.7, 0.6, 0.8, 0.6, 0.7, 0.6]
+  },
+  date: "25 NOV 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP A",
+  matchNumber: "18"
+};
+
+// MATCH 19: Netherlands vs Ecuador (Group A)
+const MATCH_19 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Cody Gakpo", minute: "6'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 1,
+    passAccuracy: 84,
+    distanceCovered: 112,
+    intensity: [0.7, 0.5, 0.5, 0.4, 0.5, 0.4]
+  },
+  away: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFDD00",
+    colorDark: "#0033A0",
+    goals: 1,
+    scorers: [
+      { name: "Enner Valencia", minute: "49'" }
+    ],
+    possession: 45,
+    shotsOnTarget: 4,
+    passAccuracy: 77,
+    distanceCovered: 115,
+    intensity: [0.5, 0.7, 0.8, 0.7, 0.6, 0.6]
+  },
+  date: "25 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP A",
+  matchNumber: "19"
+};
+
+// MATCH 20: England vs United States (Group B)
+const MATCH_20 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#002040",
+    goals: 0,
+    scorers: [],
+    possession: 56,
+    shotsOnTarget: 3,
+    passAccuracy: 87,
+    distanceCovered: 113,
+    intensity: [0.6, 0.6, 0.5, 0.5, 0.6, 0.5]
+  },
+  away: {
+    name: "United States",
+    shortName: "USA",
+    color: "#0A2342",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 44,
+    shotsOnTarget: 1,
+    passAccuracy: 82,
+    distanceCovered: 117,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  date: "25 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP B",
+  matchNumber: "20"
+};
+
+// MATCH 21: Tunisia vs Australia (Group D)
+const MATCH_21 = {
+  home: {
+    name: "Tunisia",
+    shortName: "TUN",
+    color: "#E2011A",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 58,
+    shotsOnTarget: 4,
+    passAccuracy: 79,
+    distanceCovered: 111,
+    intensity: [0.6, 0.5, 0.6, 0.7, 0.7, 0.6]
+  },
+  away: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1,
+    scorers: [
+      { name: "Mitchell Duke", minute: "23'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 2,
+    passAccuracy: 73,
+    distanceCovered: 116,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.5, 0.4]
+  },
+  date: "26 NOV 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP D",
+  matchNumber: "21"
+};
+
+// MATCH 22: Poland vs Saudi Arabia (Group C)
+const MATCH_22 = {
+  home: {
+    name: "Poland",
+    shortName: "POL",
+    color: "#DC143C",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Piotr Zieliński", minute: "39'" },
+      { name: "Robert Lewandowski", minute: "82'" }
+    ],
+    possession: 36,
+    shotsOnTarget: 3,
+    passAccuracy: 70,
+    distanceCovered: 111,
+    intensity: [0.6, 0.7, 0.5, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 64,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.7, 0.6, 0.6, 0.5]
+  },
+  date: "26 NOV 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP C",
+  matchNumber: "22"
+};
+
+// MATCH 23: France vs Denmark (Group D)
+const MATCH_23 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 2,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "61'" },
+      { name: "Kylian Mbappé", minute: "86'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 7,
+    passAccuracy: 86,
+    distanceCovered: 114,
+    intensity: [0.6, 0.6, 0.7, 0.7, 0.8, 0.8]
+  },
+  away: {
+    name: "Denmark",
+    shortName: "DEN",
+    color: "#C60C30",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Andreas Christensen", minute: "68'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 2,
+    passAccuracy: 86,
+    distanceCovered: 116,
+    intensity: [0.6, 0.6, 0.6, 0.8, 0.6, 0.6]
+  },
+  date: "26 NOV 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP D",
+  matchNumber: "23"
+};
+
+// MATCH 24: Argentina vs Mexico (Group C)
+const MATCH_24 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Lionel Messi", minute: "64'" },
+      { name: "Enzo Fernández", minute: "87'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 2,
+    passAccuracy: 84,
+    distanceCovered: 110,
+    intensity: [0.5, 0.5, 0.6, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 0,
+    scorers: [],
+    possession: 42,
+    shotsOnTarget: 1,
+    passAccuracy: 76,
+    distanceCovered: 113,
+    intensity: [0.7, 0.7, 0.6, 0.5, 0.4, 0.4]
+  },
+  date: "26 NOV 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP C",
+  matchNumber: "24"
+};
+
+// MATCH 25: Japan vs Costa Rica (Group E)
+const MATCH_25 = {
+  home: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#0000FF",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 57,
+    shotsOnTarget: 3,
+    passAccuracy: 82,
+    distanceCovered: 109,
+    intensity: [0.5, 0.5, 0.6, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Costa Rica",
+    shortName: "CRC",
+    color: "#001489",
+    colorDark: "#DA291C",
+    goals: 1,
+    scorers: [
+      { name: "Keysher Fuller", minute: "81'" }
+    ],
+    possession: 43,
+    shotsOnTarget: 1,
+    passAccuracy: 73,
+    distanceCovered: 112,
+    intensity: [0.5, 0.5, 0.5, 0.6, 0.7, 0.8]
+  },
+  date: "27 NOV 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP E",
+  matchNumber: "25"
+};
+
+// MATCH 26: Belgium vs Morocco (Group F)
+const MATCH_26 = {
+  home: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 67,
+    shotsOnTarget: 3,
+    passAccuracy: 88,
+    distanceCovered: 109,
+    intensity: [0.5, 0.5, 0.6, 0.5, 0.4, 0.4]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 2,
+    scorers: [
+      { name: "Abdelhamid Sabiri", minute: "73'" },
+      { name: "Zakaria Aboukhlal", minute: "90+2'" }
+    ],
+    possession: 33,
+    shotsOnTarget: 4,
+    passAccuracy: 76,
+    distanceCovered: 114,
+    intensity: [0.6, 0.6, 0.7, 0.8, 0.8, 0.9]
+  },
+  date: "27 NOV 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP F",
+  matchNumber: "26"
+};
+
+// MATCH 27: Croatia vs Canada (Group F)
+const MATCH_27 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 4,
+    scorers: [
+      { name: "Andrej Kramarić", minute: "36'" },
+      { name: "Marko Livaja", minute: "44'" },
+      { name: "Andrej Kramarić", minute: "70'" },
+      { name: "Lovro Majer", minute: "90+4'" }
+    ],
+    possession: 48,
+    shotsOnTarget: 10,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.5, 0.8, 0.7, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Alphonso Davies", minute: "2'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 2,
+    passAccuracy: 82,
+    distanceCovered: 110,
+    intensity: [0.8, 0.6, 0.5, 0.5, 0.4, 0.3]
+  },
+  date: "27 NOV 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "GROUP F",
+  matchNumber: "27"
+};
+
+// MATCH 28: Spain vs Germany (Group E)
+const MATCH_28 = {
+  home: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#C60B1E",
+    colorDark: "#F1BF00",
+    goals: 1,
+    scorers: [
+      { name: "Álvaro Morata", minute: "62'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 3,
+    passAccuracy: 88,
+    distanceCovered: 115,
+    intensity: [0.7, 0.7, 0.6, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 1,
+    scorers: [
+      { name: "Niclas Füllkrug", minute: "83'" }
+    ],
+    possession: 36,
+    shotsOnTarget: 4,
+    passAccuracy: 78,
+    distanceCovered: 118,
+    intensity: [0.6, 0.6, 0.7, 0.7, 0.8, 0.8]
+  },
+  date: "27 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP E",
+  matchNumber: "28"
+};
+
+// MATCH 29: Cameroon vs Serbia (Group G)
+const MATCH_29 = {
+  home: {
+    name: "Cameroon",
+    shortName: "CMR",
+    color: "#007A5E",
+    colorDark: "#CE1126",
+    goals: 3,
+    scorers: [
+      { name: "Jean-Charles Castelletto", minute: "29'" },
+      { name: "Vincent Aboubakar", minute: "63'" },
+      { name: "Eric Maxim Choupo-Moting", minute: "66'" }
+    ],
+    possession: 40,
+    shotsOnTarget: 8,
+    passAccuracy: 79,
+    distanceCovered: 109,
+    intensity: [0.6, 0.4, 0.5, 0.8, 0.8, 0.6]
+  },
+  away: {
+    name: "Serbia",
+    shortName: "SRB",
+    color: "#B72E3F",
+    colorDark: "#0C1C66",
+    goals: 3,
+    scorers: [
+      { name: "Strahinja Pavlović", minute: "45+1'" },
+      { name: "Sergej Milinković-Savić", minute: "45+3'" },
+      { name: "Aleksandar Mitrović", minute: "53'" }
+    ],
+    possession: 60,
+    shotsOnTarget: 5,
+    passAccuracy: 84,
+    distanceCovered: 111,
+    intensity: [0.5, 0.8, 0.8, 0.6, 0.5, 0.5]
+  },
+  date: "28 NOV 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP G",
+  matchNumber: "29"
+};
+
+// MATCH 30: South Korea vs Ghana (Group H)
+const MATCH_30 = {
+  home: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#0047A0",
+    goals: 2,
+    scorers: [
+      { name: "Cho Gue-sung", minute: "58'" },
+      { name: "Cho Gue-sung", minute: "61'" }
+    ],
+    possession: 64,
+    shotsOnTarget: 7,
+    passAccuracy: 86,
+    distanceCovered: 113,
+    intensity: [0.5, 0.5, 0.8, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 3,
+    scorers: [
+      { name: "Mohammed Salisu", minute: "24'" },
+      { name: "Mohammed Kudus", minute: "34'" },
+      { name: "Mohammed Kudus", minute: "68'" }
+    ],
+    possession: 36,
+    shotsOnTarget: 3,
+    passAccuracy: 74,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.5, 0.6, 0.5, 0.4]
+  },
+  date: "28 NOV 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP H",
+  matchNumber: "30"
+};
+
+// MATCH 31: Brazil vs Switzerland (Group G)
+const MATCH_31 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 1,
+    scorers: [
+      { name: "Casemiro", minute: "83'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 5,
+    passAccuracy: 85,
+    distanceCovered: 108,
+    intensity: [0.6, 0.6, 0.6, 0.6, 0.7, 0.8]
+  },
+  away: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 46,
+    shotsOnTarget: 0,
+    passAccuracy: 80,
+    distanceCovered: 111,
+    intensity: [0.6, 0.6, 0.6, 0.5, 0.5, 0.4]
+  },
+  date: "28 NOV 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP G",
+  matchNumber: "31"
+};
+
+// MATCH 32: Portugal vs Uruguay (Group H)
+const MATCH_32 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 2,
+    scorers: [
+      { name: "Bruno Fernandes", minute: "54'" },
+      { name: "Bruno Fernandes", minute: "90+3' (P)" }
+    ],
+    possession: 60,
+    shotsOnTarget: 3,
+    passAccuracy: 84,
+    distanceCovered: 110,
+    intensity: [0.5, 0.6, 0.7, 0.6, 0.7, 0.8]
+  },
+  away: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#0081C6",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 40,
+    shotsOnTarget: 3,
+    passAccuracy: 76,
+    distanceCovered: 112,
+    intensity: [0.6, 0.5, 0.5, 0.7, 0.6, 0.6]
+  },
+  date: "28 NOV 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP H",
+  matchNumber: "32"
+};
+
+// MATCH 33: Ecuador vs Senegal (Group A)
+const MATCH_33 = {
+  home: {
+    name: "Ecuador",
+    shortName: "ECU",
+    color: "#FFDD00",
+    colorDark: "#0033A0",
+    goals: 1,
+    scorers: [
+      { name: "Moises Caicedo", minute: "67'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.5, 0.5, 0.5, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 2,
+    scorers: [
+      { name: "Ismaïla Sarr", minute: "44' (P)" },
+      { name: "Kalidou Koulibaly", minute: "70'" }
+    ],
+    possession: 38,
+    shotsOnTarget: 4,
+    passAccuracy: 71,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.6, 0.8, 0.7, 0.7]
+  },
+  date: "29 NOV 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "GROUP A",
+  matchNumber: "33"
+};
+
+// MATCH 34: Netherlands vs Qatar (Group A)
+const MATCH_34 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Cody Gakpo", minute: "26'" },
+      { name: "Frenkie de Jong", minute: "49'" }
+    ],
+    possession: 63,
+    shotsOnTarget: 4,
+    passAccuracy: 90,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.6, 0.5, 0.5, 0.4]
+  },
+  away: {
+    name: "Qatar",
+    shortName: "QAT",
+    color: "#8A1538",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 37,
+    shotsOnTarget: 1,
+    passAccuracy: 81,
+    distanceCovered: 106,
+    intensity: [0.5, 0.5, 0.4, 0.4, 0.4, 0.3]
+  },
+  date: "29 NOV 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP A",
+  matchNumber: "34"
+};
+
+// MATCH 35: Iran vs United States (Group B)
+const MATCH_35 = {
+  home: {
+    name: "Iran",
+    shortName: "IRN",
+    color: "#239E46",
+    colorDark: "#DA251D",
+    goals: 0,
+    scorers: [],
+    possession: 49,
+    shotsOnTarget: 1,
+    passAccuracy: 74,
+    distanceCovered: 113,
+    intensity: [0.5, 0.5, 0.5, 0.7, 0.8, 0.9]
+  },
+  away: {
+    name: "United States",
+    shortName: "USA",
+    color: "#0A2342",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Christian Pulisic", minute: "38'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 5,
+    passAccuracy: 81,
+    distanceCovered: 116,
+    intensity: [0.8, 0.8, 0.7, 0.6, 0.6, 0.5]
+  },
+  date: "29 NOV 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP B",
+  matchNumber: "35"
+};
+
+// MATCH 36: Wales vs England (Group B)
+const MATCH_36 = {
+  home: {
+    name: "Wales",
+    shortName: "WAL",
+    color: "#A6192E",
+    colorDark: "#00AD43",
+    goals: 0,
+    scorers: [],
+    possession: 35,
+    shotsOnTarget: 1,
+    passAccuracy: 76,
+    distanceCovered: 111,
+    intensity: [0.5, 0.5, 0.4, 0.4, 0.3, 0.3]
+  },
+  away: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#002040",
+    goals: 3,
+    scorers: [
+      { name: "Marcus Rashford", minute: "50'" },
+      { name: "Phil Foden", minute: "51'" },
+      { name: "Marcus Rashford", minute: "68'" }
+    ],
+    possession: 65,
+    shotsOnTarget: 7,
+    passAccuracy: 89,
+    distanceCovered: 113,
+    intensity: [0.6, 0.6, 0.8, 0.8, 0.7, 0.6]
+  },
+  date: "29 NOV 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP B",
+  matchNumber: "36"
+};
+
+// MATCH 37: Australia vs Denmark (Group D)
+const MATCH_37 = {
+  home: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1,
+    scorers: [
+      { name: "Mathew Leckie", minute: "60'" }
+    ],
+    possession: 31,
+    shotsOnTarget: 4,
+    passAccuracy: 71,
+    distanceCovered: 118,
+    intensity: [0.6, 0.6, 0.7, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Denmark",
+    shortName: "DEN",
+    color: "#C60C30",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 69,
+    shotsOnTarget: 3,
+    passAccuracy: 86,
+    distanceCovered: 115,
+    intensity: [0.6, 0.6, 0.6, 0.5, 0.5, 0.4]
+  },
+  date: "30 NOV 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP D",
+  matchNumber: "37"
+};
+
+// MATCH 38: Tunisia vs France (Group D)
+const MATCH_38 = {
+  home: {
+    name: "Tunisia",
+    shortName: "TUN",
+    color: "#E2011A",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Wahbi Khazri", minute: "58'" }
+    ],
+    possession: 34,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 114,
+    intensity: [0.7, 0.8, 0.8, 0.6, 0.6, 0.7]
+  },
+  away: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 0,
+    scorers: [],
+    possession: 66,
+    shotsOnTarget: 3,
+    passAccuracy: 87,
+    distanceCovered: 111,
+    intensity: [0.5, 0.5, 0.5, 0.6, 0.8, 0.8]
+  },
+  date: "30 NOV 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP D",
+  matchNumber: "38"
+};
+
+// MATCH 39: Poland vs Argentina (Group C)
+const MATCH_39 = {
+  home: {
+    name: "Poland",
+    shortName: "POL",
+    color: "#DC143C",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 27,
+    shotsOnTarget: 0,
+    passAccuracy: 69,
+    distanceCovered: 108,
+    intensity: [0.5, 0.5, 0.4, 0.4, 0.4, 0.3]
+  },
+  away: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Alexis Mac Allister", minute: "46'" },
+      { name: "Julián Álvarez", minute: "67'" }
+    ],
+    possession: 73,
+    shotsOnTarget: 12,
+    passAccuracy: 92,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.8, 0.8, 0.7, 0.6]
+  },
+  date: "30 NOV 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP C",
+  matchNumber: "39"
+};
+
+// MATCH 40: Saudi Arabia vs Mexico (Group C)
+const MATCH_40 = {
+  home: {
+    name: "Saudi Arabia",
+    shortName: "KSA",
+    color: "#006C35",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Salem Al-Dawsari", minute: "90+5'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 2,
+    passAccuracy: 70,
+    distanceCovered: 113,
+    intensity: [0.6, 0.5, 0.5, 0.5, 0.6, 0.7]
+  },
+  away: {
+    name: "Mexico",
+    shortName: "MEX",
+    color: "#006847",
+    colorDark: "#CE1126",
+    goals: 2,
+    scorers: [
+      { name: "Henry Martín", minute: "47'" },
+      { name: "Luis Chávez", minute: "52'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 10,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.6, 0.6, 0.9, 0.8, 0.8, 0.7]
+  },
+  date: "30 NOV 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP C",
+  matchNumber: "40"
+};
+
+// MATCH 41: Croatia vs Belgium (Group F)
+const MATCH_41 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 48,
+    shotsOnTarget: 4,
+    passAccuracy: 83,
+    distanceCovered: 116,
+    intensity: [0.6, 0.6, 0.6, 0.6, 0.5, 0.5]
+  },
+  away: {
+    name: "Belgium",
+    shortName: "BEL",
+    color: "#E30613",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 52,
+    shotsOnTarget: 3,
+    passAccuracy: 84,
+    distanceCovered: 112,
+    intensity: [0.5, 0.5, 0.6, 0.7, 0.8, 0.8]
+  },
+  date: "01 DEC 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "GROUP F",
+  matchNumber: "41"
+};
+
+// MATCH 42: Canada vs Morocco (Group F)
+const MATCH_42 = {
+  home: {
+    name: "Canada",
+    shortName: "CAN",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Nayef Aguerd", minute: "40' (OG)" }
+    ],
+    possession: 59,
+    shotsOnTarget: 0,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.5, 0.5, 0.6, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 2,
+    scorers: [
+      { name: "Hakim Ziyech", minute: "4'" },
+      { name: "Youssef En-Nesyri", minute: "23'" }
+    ],
+    possession: 41,
+    shotsOnTarget: 2,
+    passAccuracy: 77,
+    distanceCovered: 115,
+    intensity: [0.8, 0.7, 0.6, 0.5, 0.6, 0.5]
+  },
+  date: "01 DEC 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "GROUP F",
+  matchNumber: "42"
+};
+
+// MATCH 43: Japan vs Spain (Group E)
+const MATCH_43 = {
+  home: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#0000FF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Ritsu Doan", minute: "48'" },
+      { name: "Ao Tanaka", minute: "51'" }
+    ],
+    possession: 18,
+    shotsOnTarget: 3,
+    passAccuracy: 68,
+    distanceCovered: 119,
+    intensity: [0.4, 0.4, 0.8, 0.7, 0.8, 0.9]
+  },
+  away: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#C60B1E",
+    colorDark: "#F1BF00",
+    goals: 1,
+    scorers: [
+      { name: "Álvaro Morata", minute: "11'" }
+    ],
+    possession: 82,
+    shotsOnTarget: 5,
+    passAccuracy: 93,
+    distanceCovered: 114,
+    intensity: [0.7, 0.6, 0.5, 0.5, 0.5, 0.4]
+  },
+  date: "01 DEC 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "GROUP E",
+  matchNumber: "43"
+};
+
+// MATCH 44: Costa Rica vs Germany (Group E)
+const MATCH_44 = {
+  home: {
+    name: "Costa Rica",
+    shortName: "CRC",
+    color: "#001489",
+    colorDark: "#DA291C",
+    goals: 2,
+    scorers: [
+      { name: "Yeltsin Tejeda", minute: "58'" },
+      { name: "Juan Pablo Vargas", minute: "70'" }
+    ],
+    possession: 31,
+    shotsOnTarget: 5,
+    passAccuracy: 69,
+    distanceCovered: 107,
+    intensity: [0.4, 0.5, 0.7, 0.8, 0.6, 0.4]
+  },
+  away: {
+    name: "Germany",
+    shortName: "GER",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 4,
+    scorers: [
+      { name: "Serge Gnabry", minute: "10'" },
+      { name: "Kai Havertz", minute: "73'" },
+      { name: "Kai Havertz", minute: "85'" },
+      { name: "Niclas Füllkrug", minute: "89'" }
+    ],
+    possession: 69,
+    shotsOnTarget: 11,
+    passAccuracy: 89,
+    distanceCovered: 116,
+    intensity: [0.7, 0.6, 0.6, 0.8, 0.9, 0.8]
+  },
+  date: "01 DEC 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "GROUP E",
+  matchNumber: "44"
+};
+
+// MATCH 45: Ghana vs Uruguay (Group H)
+const MATCH_45 = {
+  home: {
+    name: "Ghana",
+    shortName: "GHA",
+    color: "#FFFFFF",
+    colorDark: "#000000",
+    goals: 0,
+    scorers: [],
+    possession: 51,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 109,
+    intensity: [0.6, 0.5, 0.5, 0.6, 0.5, 0.4]
+  },
+  away: {
+    name: "Uruguay",
+    shortName: "URU",
+    color: "#0081C6",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Giorgian de Arrascaeta", minute: "26'" },
+      { name: "Giorgian de Arrascaeta", minute: "32'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 6,
+    passAccuracy: 79,
+    distanceCovered: 111,
+    intensity: [0.6, 0.8, 0.7, 0.6, 0.6, 0.5]
+  },
+  date: "02 DEC 2022",
+  venue: "AL JANOUB STADIUM",
+  stage: "GROUP H",
+  matchNumber: "45"
+};
+
+// MATCH 46: South Korea vs Portugal (Group H)
+const MATCH_46 = {
+  home: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#0047A0",
+    goals: 2,
+    scorers: [
+      { name: "Kim Young-gwon", minute: "27'" },
+      { name: "Hwang Hee-chan", minute: "90+1'" }
+    ],
+    possession: 38,
+    shotsOnTarget: 6,
+    passAccuracy: 79,
+    distanceCovered: 115,
+    intensity: [0.5, 0.6, 0.6, 0.6, 0.7, 0.9]
+  },
+  away: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 1,
+    scorers: [
+      { name: "Ricardo Horta", minute: "5'" }
+    ],
+    possession: 62,
+    shotsOnTarget: 4,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.5, 0.5, 0.4]
+  },
+  date: "02 DEC 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "GROUP H",
+  matchNumber: "46"
+};
+
+// MATCH 47: Serbia vs Switzerland (Group G)
+const MATCH_47 = {
+  home: {
+    name: "Serbia",
+    shortName: "SRB",
+    color: "#B72E3F",
+    colorDark: "#0C1C66",
+    goals: 2,
+    scorers: [
+      { name: "Aleksandar Mitrović", minute: "26'" },
+      { name: "Dušan Vlahović", minute: "35'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 4,
+    passAccuracy: 81,
+    distanceCovered: 113,
+    intensity: [0.5, 0.8, 0.6, 0.5, 0.5, 0.4]
+  },
+  away: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Xherdan Shaqiri", minute: "20'" },
+      { name: "Breel Embolo", minute: "44'" },
+      { name: "Remo Freuler", minute: "48'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 7,
+    passAccuracy: 84,
+    distanceCovered: 116,
+    intensity: [0.6, 0.7, 0.8, 0.7, 0.6, 0.6]
+  },
+  date: "02 DEC 2022",
+  venue: "STADIUM 974",
+  stage: "GROUP G",
+  matchNumber: "47"
+};
+
+// MATCH 48: Cameroon vs Brazil (Group G)
+const MATCH_48 = {
+  home: {
+    name: "Cameroon",
+    shortName: "CMR",
+    color: "#007A5E",
+    colorDark: "#CE1126",
+    goals: 1,
+    scorers: [
+      { name: "Vincent Aboubakar", minute: "90+2'" }
+    ],
+    possession: 35,
+    shotsOnTarget: 3,
+    passAccuracy: 78,
+    distanceCovered: 109,
+    intensity: [0.5, 0.5, 0.6, 0.6, 0.7, 0.8]
+  },
+  away: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 0,
+    scorers: [],
+    possession: 65,
+    shotsOnTarget: 7,
+    passAccuracy: 88,
+    distanceCovered: 112,
+    intensity: [0.6, 0.6, 0.6, 0.6, 0.5, 0.5]
+  },
+  date: "02 DEC 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "GROUP G",
+  matchNumber: "48"
+};
+
+// MATCH 49: Netherlands vs United States (Round of 16)
+const MATCH_49 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Memphis Depay", minute: "10'" },
+      { name: "Daley Blind", minute: "45+1'" },
+      { name: "Denzel Dumfries", minute: "81'" }
+    ],
+    possession: 42,
+    shotsOnTarget: 6,
+    passAccuracy: 81,
+    distanceCovered: 114,
+    intensity: [0.7, 0.7, 0.5, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "United States",
+    shortName: "USA",
+    color: "#0A2342",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Haji Wright", minute: "76'" }
+    ],
+    possession: 58,
+    shotsOnTarget: 8,
+    passAccuracy: 85,
+    distanceCovered: 117,
+    intensity: [0.5, 0.6, 0.6, 0.7, 0.8, 0.7]
+  },
+  date: "03 DEC 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "49"
+};
+
+// MATCH 50: Argentina vs Australia (Round of 16)
+const MATCH_50 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Lionel Messi", minute: "35'" },
+      { name: "Julián Álvarez", minute: "57'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 5,
+    passAccuracy: 88,
+    distanceCovered: 110,
+    intensity: [0.6, 0.7, 0.7, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Australia",
+    shortName: "AUS",
+    color: "#002B7F",
+    colorDark: "#FCD116",
+    goals: 1,
+    scorers: [
+      { name: "Enzo Fernández", minute: "77' (OG)" }
+    ],
+    possession: 39,
+    shotsOnTarget: 1,
+    passAccuracy: 80,
+    distanceCovered: 115,
+    intensity: [0.5, 0.5, 0.6, 0.7, 0.8, 0.8]
+  },
+  date: "03 DEC 2022",
+  venue: "AHMAD BIN ALI STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "50"
+};
+
+// MATCH 51: France vs Poland (Round of 16)
+const MATCH_51 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 3,
+    scorers: [
+      { name: "Olivier Giroud", minute: "44'" },
+      { name: "Kylian Mbappé", minute: "74'" },
+      { name: "Kylian Mbappé", minute: "90+1'" }
+    ],
+    possession: 55,
+    shotsOnTarget: 8,
+    passAccuracy: 87,
+    distanceCovered: 112,
+    intensity: [0.6, 0.7, 0.6, 0.8, 0.8, 0.7]
+  },
+  away: {
+    name: "Poland",
+    shortName: "POL",
+    color: "#DC143C",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Robert Lewandowski", minute: "90+9' (P)" }
+    ],
+    possession: 45,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 111,
+    intensity: [0.5, 0.6, 0.5, 0.5, 0.4, 0.4]
+  },
+  date: "04 DEC 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "51"
+};
+
+// MATCH 52: England vs Senegal (Round of 16)
+const MATCH_52 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#002040",
+    goals: 3,
+    scorers: [
+      { name: "Jordan Henderson", minute: "38'" },
+      { name: "Harry Kane", minute: "45+3'" },
+      { name: "Bukayo Saka", minute: "57'" }
+    ],
+    possession: 61,
+    shotsOnTarget: 4,
+    passAccuracy: 89,
+    distanceCovered: 112,
+    intensity: [0.6, 0.8, 0.8, 0.7, 0.6, 0.5]
+  },
+  away: {
+    name: "Senegal",
+    shortName: "SEN",
+    color: "#00853F",
+    colorDark: "#FDEF42",
+    goals: 0,
+    scorers: [],
+    possession: 39,
+    shotsOnTarget: 1,
+    passAccuracy: 79,
+    distanceCovered: 110,
+    intensity: [0.7, 0.6, 0.5, 0.4, 0.4, 0.3]
+  },
+  date: "04 DEC 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "52"
+};
+
+// MATCH 53: Japan vs Croatia (Round of 16 - AET & Penalties)
+const MATCH_53 = {
+  home: {
+    name: "Japan",
+    shortName: "JPN",
+    color: "#0000FF",
+    colorDark: "#FFFFFF",
+    goals: 1, // 1-1 after extra time, CRO won 3-1 on penalties
+    scorers: [
+      { name: "Daizen Maeda", minute: "43'" }
+    ],
+    possession: 41,
+    shotsOnTarget: 4,
+    passAccuracy: 78,
+    distanceCovered: 147,
+    intensity: [0.6, 0.6, 0.5, 0.6, 0.6, 0.5]
+  },
+  away: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Ivan Perišić", minute: "55'" }
+    ],
+    possession: 59,
+    shotsOnTarget: 4,
+    passAccuracy: 84,
+    distanceCovered: 149,
+    intensity: [0.5, 0.6, 0.7, 0.6, 0.6, 0.5]
+  },
+  date: "05 DEC 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "53"
+};
+
+// MATCH 54: Brazil vs South Korea (Round of 16)
+const MATCH_54 = {
+  home: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 4,
+    scorers: [
+      { name: "Vinícius Júnior", minute: "7'" },
+      { name: "Neymar", minute: "13' (P)" },
+      { name: "Richarlison", minute: "29'" },
+      { name: "Lucas Paquetá", minute: "36'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 9,
+    passAccuracy: 89,
+    distanceCovered: 111,
+    intensity: [0.9, 0.8, 0.6, 0.6, 0.5, 0.4]
+  },
+  away: {
+    name: "South Korea",
+    shortName: "KOR",
+    color: "#CD2E3A",
+    colorDark: "#0047A0",
+    goals: 1,
+    scorers: [
+      { name: "Paik Seung-ho", minute: "76'" }
+    ],
+    possession: 46,
+    shotsOnTarget: 6,
+    passAccuracy: 85,
+    distanceCovered: 113,
+    intensity: [0.4, 0.5, 0.5, 0.6, 0.7, 0.6]
+  },
+  date: "05 DEC 2022",
+  venue: "STADIUM 974",
+  stage: "ROUND OF 16",
+  matchNumber: "54"
+};
+
+// MATCH 55: Morocco vs Spain (Round of 16 - AET & Penalties)
+const MATCH_55 = {
+  home: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 0, // 0-0 after extra time, MAR won 3-0 on penalties
+    scorers: [],
+    possession: 23,
+    shotsOnTarget: 2,
+    passAccuracy: 71,
+    distanceCovered: 148,
+    intensity: [0.7, 0.7, 0.8, 0.7, 0.8, 0.9]
+  },
+  away: {
+    name: "Spain",
+    shortName: "ESP",
+    color: "#C60B1E",
+    colorDark: "#F1BF00",
+    goals: 0,
+    scorers: [],
+    possession: 77,
+    shotsOnTarget: 1,
+    passAccuracy: 92,
+    distanceCovered: 146,
+    intensity: [0.5, 0.5, 0.5, 0.6, 0.5, 0.4]
+  },
+  date: "06 DEC 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "55"
+};
+
+// MATCH 56: Portugal vs Switzerland (Round of 16)
+const MATCH_56 = {
+  home: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 6,
+    scorers: [
+      { name: "Gonçalo Ramos", minute: "17'" },
+      { name: "Pepe", minute: "33'" },
+      { name: "Gonçalo Ramos", minute: "51'" },
+      { name: "Raphaël Guerreiro", minute: "55'" },
+      { name: "Gonçalo Ramos", minute: "67'" },
+      { name: "Rafael Leão", minute: "90+2'" }
+    ],
+    possession: 47,
+    shotsOnTarget: 9,
+    passAccuracy: 84,
+    distanceCovered: 114,
+    intensity: [0.7, 0.8, 0.9, 0.8, 0.7, 0.6]
+  },
+  away: {
+    name: "Switzerland",
+    shortName: "SUI",
+    color: "#D52B1E",
+    colorDark: "#FFFFFF",
+    goals: 1,
+    scorers: [
+      { name: "Manuel Akanji", minute: "58'" }
+    ],
+    possession: 53,
+    shotsOnTarget: 3,
+    passAccuracy: 86,
+    distanceCovered: 112,
+    intensity: [0.5, 0.5, 0.4, 0.5, 0.4, 0.3]
+  },
+  date: "06 DEC 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "ROUND OF 16",
+  matchNumber: "56"
+};
+
+// MATCH 57: Croatia vs Brazil (Quarter-finals - AET & Penalties)
+const MATCH_57 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 1, // 1-1 after extra time, CRO won 4-2 on penalties
+    scorers: [
+      { name: "Bruno Petković", minute: "117'" }
+    ],
+    possession: 50,
+    shotsOnTarget: 1,
+    passAccuracy: 87,
+    distanceCovered: 148,
+    intensity: [0.6, 0.6, 0.6, 0.7, 0.8, 0.8]
+  },
+  away: {
+    name: "Brazil",
+    shortName: "BRA",
+    color: "#FEDD00",
+    colorDark: "#009739",
+    goals: 1,
+    scorers: [
+      { name: "Neymar", minute: "105+1'" }
+    ],
+    possession: 50,
+    shotsOnTarget: 11,
+    passAccuracy: 88,
+    distanceCovered: 145,
+    intensity: [0.6, 0.7, 0.7, 0.8, 0.7, 0.6]
+  },
+  date: "09 DEC 2022",
+  venue: "EDUCATION CITY STADIUM",
+  stage: "QUARTER-FINALS",
+  matchNumber: "57"
+};
+
+// MATCH 58: Netherlands vs Argentina (Quarter-finals - AET & Penalties)
+const MATCH_58 = {
+  home: {
+    name: "Netherlands",
+    shortName: "NED",
+    color: "#F36C21",
+    colorDark: "#FFFFFF",
+    goals: 2, // 2-2 after extra time, ARG won 4-3 on penalties
+    scorers: [
+      { name: "Wout Weghorst", minute: "83'" },
+      { name: "Wout Weghorst", minute: "90+11'" }
+    ],
+    possession: 52,
+    shotsOnTarget: 2,
+    passAccuracy: 82,
+    distanceCovered: 144,
+    intensity: [0.5, 0.5, 0.8, 0.9, 0.7, 0.8]
+  },
+  away: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Nahuel Molina", minute: "35'" },
+      { name: "Lionel Messi", minute: "73' (P)" }
+    ],
+    possession: 48,
+    shotsOnTarget: 6,
+    passAccuracy: 82,
+    distanceCovered: 147,
+    intensity: [0.6, 0.7, 0.7, 0.5, 0.8, 0.7]
+  },
+  date: "09 DEC 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "QUARTER-FINALS",
+  matchNumber: "58"
+};
+
+// MATCH 59: Morocco vs Portugal (Quarter-finals)
+const MATCH_59 = {
+  home: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 1,
+    scorers: [
+      { name: "Youssef En-Nesyri", minute: "42'" }
+    ],
+    possession: 26,
+    shotsOnTarget: 3,
+    passAccuracy: 74,
+    distanceCovered: 112,
+    intensity: [0.7, 0.7, 0.8, 0.8, 0.9, 0.9]
+  },
+  away: {
+    name: "Portugal",
+    shortName: "POR",
+    color: "#006600",
+    colorDark: "#FF0000",
+    goals: 0,
+    scorers: [],
+    possession: 74,
+    shotsOnTarget: 3,
+    passAccuracy: 88,
+    distanceCovered: 109,
+    intensity: [0.5, 0.5, 0.6, 0.7, 0.7, 0.6]
+  },
+  date: "10 DEC 2022",
+  venue: "AL THUMAMA STADIUM",
+  stage: "QUARTER-FINALS",
+  matchNumber: "59"
+};
+
+// MATCH 60: England vs France (Quarter-finals)
+const MATCH_60 = {
+  home: {
+    name: "England",
+    shortName: "ENG",
+    color: "#FFFFFF",
+    colorDark: "#002040",
+    goals: 1,
+    scorers: [
+      { name: "Harry Kane", minute: "54' (P)" }
+    ],
+    possession: 57,
+    shotsOnTarget: 8,
+    passAccuracy: 88,
+    distanceCovered: 108,
+    intensity: [0.6, 0.6, 0.8, 0.8, 0.7, 0.8]
+  },
+  away: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 2,
+    scorers: [
+      { name: "Aurélien Tchouaméni", minute: "17'" },
+      { name: "Olivier Giroud", minute: "78'" }
+    ],
+    possession: 43,
+    shotsOnTarget: 5,
+    passAccuracy: 81,
+    distanceCovered: 106,
+    intensity: [0.7, 0.6, 0.6, 0.7, 0.8, 0.6]
+  },
+  date: "10 DEC 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "QUARTER-FINALS",
+  matchNumber: "60"
+};
+
+// MATCH 61: Argentina vs Croatia (Semi-finals)
+const MATCH_61 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 3,
+    scorers: [
+      { name: "Lionel Messi", minute: "34' (P)" },
+      { name: "Julián Álvarez", minute: "39'" },
+      { name: "Julián Álvarez", minute: "69'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 7,
+    passAccuracy: 85,
+    distanceCovered: 111,
+    intensity: [0.7, 0.8, 0.7, 0.6, 0.5, 0.4]
+  },
+  away: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 0,
+    scorers: [],
+    possession: 61,
+    shotsOnTarget: 2,
+    passAccuracy: 89,
+    distanceCovered: 114,
+    intensity: [0.6, 0.6, 0.5, 0.5, 0.4, 0.3]
+  },
+  date: "13 DEC 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "SEMI-FINALS",
+  matchNumber: "61"
+};
+
+// MATCH 62: France vs Morocco (Semi-finals)
+const MATCH_62 = {
+  home: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 2,
+    scorers: [
+      { name: "Théo Hernandez", minute: "5'" },
+      { name: "Randal Kolo Muani", minute: "79'" }
+    ],
+    possession: 39,
+    shotsOnTarget: 3,
+    passAccuracy: 81,
+    distanceCovered: 107,
+    intensity: [0.7, 0.5, 0.6, 0.6, 0.7, 0.6]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 0,
+    scorers: [],
+    possession: 61,
+    shotsOnTarget: 3,
+    passAccuracy: 86,
+    distanceCovered: 113,
+    intensity: [0.5, 0.8, 0.7, 0.7, 0.6, 0.7]
+  },
+  date: "14 DEC 2022",
+  venue: "AL BAYT STADIUM",
+  stage: "SEMI-FINALS",
+  matchNumber: "62"
+};
+
+// MATCH 63: Croatia vs Morocco (Third-place Playoff)
+const MATCH_63 = {
+  home: {
+    name: "Croatia",
+    shortName: "CRO",
+    color: "#FF0000",
+    colorDark: "#FFFFFF",
+    goals: 2,
+    scorers: [
+      { name: "Joško Gvardiol", minute: "7'" },
+      { name: "Mislav Oršić", minute: "42'" }
+    ],
+    possession: 51,
+    shotsOnTarget: 4,
+    passAccuracy: 85,
+    distanceCovered: 110,
+    intensity: [0.7, 0.7, 0.6, 0.5, 0.6, 0.5]
+  },
+  away: {
+    name: "Morocco",
+    shortName: "MAR",
+    color: "#C1272D",
+    colorDark: "#006233",
+    goals: 1,
+    scorers: [
+      { name: "Achraf Dari", minute: "9'" }
+    ],
+    possession: 49,
+    shotsOnTarget: 2,
+    passAccuracy: 84,
+    distanceCovered: 108,
+    intensity: [0.7, 0.6, 0.6, 0.5, 0.5, 0.4]
+  },
+  date: "17 DEC 2022",
+  venue: "KHALIFA INTERNATIONAL STADIUM",
+  stage: "3RD PLACE PLAYOFF",
+  matchNumber: "63"
+};
+
+// MATCH 64: The Final (After Extra Time & Penalties)
+const MATCH_64 = {
+  home: {
+    name: "Argentina",
+    shortName: "ARG",
+    color: "#74ACDF",
+    colorDark: "#FFFFFF",
+    goals: 3, // 3-3 after extra time, ARG won 4-2 on penalties
+    scorers: [
+      { name: "Lionel Messi", minute: "23' (P)" },
+      { name: "Ángel Di María", minute: "36'" },
+      { name: "Lionel Messi", minute: "108'" }
+    ],
+    possession: 54,
+    shotsOnTarget: 10,
+    passAccuracy: 82,
+    distanceCovered: 146, // Includes Extra Time
+    intensity: [0.9, 0.8, 0.7, 0.8, 0.8, 0.9]
+  },
+
+  away: {
+    name: "France",
+    shortName: "FRA",
+    color: "#002395",
+    colorDark: "#E1001A",
+    goals: 3,
+    scorers: [
+      { name: "Kylian Mbappé", minute: "80' (P)" },
+      { name: "Kylian Mbappé", minute: "81'" },
+      { name: "Kylian Mbappé", minute: "118' (P)" }
+    ],
+    possession: 46,
+    shotsOnTarget: 5,
+    passAccuracy: 83,
+    distanceCovered: 143, // Includes Extra Time
+    intensity: [0.4, 0.5, 0.9, 0.8, 0.9, 0.9]
+  },
+
+  date: "18 DEC 2022",
+  venue: "LUSAIL STADIUM",
+  stage: "FINAL",
+  matchNumber: "64"
+};
+
